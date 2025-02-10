@@ -239,7 +239,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="login"
+                    path="/login"
                     element={
                         <>
                             <Header link={"/img/header/batch.jpg"}/>
