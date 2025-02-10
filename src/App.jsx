@@ -233,18 +233,16 @@ function App() {
                     path="/new/discount"
                     element={
                         <>
-                        
-    <Header link={"/img/header/discount.jpg"}/>
+                            <Header link={"/img/header/discount.jpg"}/>
                             <Discounts/>
                         </>
                     }
                 />
                 <Route
-                    path="/login"
+                    path="/l"
                     element={
                         <>
-                        
-    <Header link={"/img/header/batch.jpg"}/>
+                            <Header link={"/img/header/batch.jpg"}/>
                             <Login/>
                         </>
                     }
@@ -253,8 +251,7 @@ function App() {
                     path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK"
                     element={
                         <>
-                        
-    <Header link={"/img/header/batch.jpg"}/>
+                            <Header link={"/img/header/batch.jpg"}/>
                             <Admin/>
                         </>
                     }
