@@ -240,7 +240,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="/login/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK"
+                    path="/login"
                     element={
                         <>
                         
