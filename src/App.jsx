@@ -46,74 +46,82 @@ function App() {
           <Header link={"/img/intro-bg1.jpg"}/>
           <Home/>
         </>} />
+
       <Route path="about" element={
         <>
             <Header link={"/img/header/about.jpg"}/>
             <About />
         </>
         } />
+
       <Route path="predeparture" element={
         <>
             <Header link={"/img/header/predept.jpg"}/>
             <PreDeparture />
         </>
         } />
+
       <Route path="educational-loan" element={
         <>
             <Header link={"/img/header/edloan.jpg"}/>
             <EdLoan />
         </>
         } />
-      <Route path="/prereq/competitive/gre" element={
+
+        <Route path="login" element={
+            <>
+                <Header link={"/img/header/batch.jpg"}/>
+                <Login/> 
+            </>
+        }/>
+
+        <Route path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK" element={
+            <>
+                <Header link={"/img/header/batch.jpg"}/>
+                <Admin/>
+            </>
+        }/>
+
+        <Route path="/prereq/competitive/gre" element={
         <>
             <Header link={"/img/header/gre.jpg"}/>
             <ExamsToGive />
             <Gre />
         </>
         }/>
-                <Route
-                    path="/prereq/competitive/gmat"
-                    element={
-                        <>
+
+        <Route path="/prereq/competitive/gmat" element={
+        <>
             <Header link={"/img/header/gmat.jpg"}/>
-                            <ExamsToGive />
-                            <Gmat />
-                        </>
-                    }
-                />
-                <Route
-                    path="/prereq/competitive/ielts"
-                    element={
-                        <>
-                            
-                <Header link={"/img/header/ielts.jpg"}/>
-                            <ExamsToGive />
-                            <Ielts />
-                        </>
-                    }
-                />
-                <Route
-                    path="/prereq/competitive/pte"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/pte.jpg"}/>
-                            <ExamsToGive />
-                            <Pte />
-                        </>
-                    }
-                />
-                <Route
-                    path="/prereq/competitive/sat"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/sat.jpg"}/>
-                            <ExamsToGive />
-                            <Sat />
-                        </>
-                    }
-                />
+            <ExamsToGive />
+            <Gmat />
+        </>
+        }/>
+
+        <Route path="/prereq/competitive/ielts" element={
+        <>
+            <Header link={"/img/header/ielts.jpg"}/>
+            <ExamsToGive />
+            <Ielts />
+        </>
+        }/>
+
+        <Route path="/prereq/competitive/pte" element={
+        <>
+            <Header link={"/img/header/pte.jpg"}/>
+            <ExamsToGive />
+            <Pte />
+        </>
+        }/>
+
+        <Route path="/prereq/competitive/sat" element={
+        <>
+            <Header link={"/img/header/sat.jpg"}/>
+            <ExamsToGive />
+            <Sat />
+        </>
+        }/>
+        
                 <Route
                     path="/prereq/competitive/toefl"
                     element={
@@ -238,30 +246,13 @@ function App() {
                         </>
                     }
                 />
-                <Route
-                    path="/login"
-                    element={
-                        <>
-                            <Header link={"/img/header/batch.jpg"}/>
-                            
-                        </>
-                    }
-                />
-                <Route
-                    path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK"
-                    element={
-                        <>
-                            <Header link={"/img/header/batch.jpg"}/>
-                            <Admin/>
-                        </>
-                    }
-                />
+                
                 <Route
                     path="/appointment/schedule/booking"
                     element={
                         <>
                         
-    <Header link={"/img/header/batch.jpg"}/>
+                        <Header link={"/img/header/batch.jpg"}/>
                             <Appointment/>
                         </>
                     }
