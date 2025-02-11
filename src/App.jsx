@@ -208,14 +208,14 @@ function App() {
 
         <Route path="login" element={
         <>
-            <Header link={"/img/header/batch.jpg"}/>
+            <Header link={"/img/header/login.jpg"}/>
             <Login/> 
         </>
         }/>
 
         <Route path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK" element={
         <>
-            <Header link={"/img/header/batch.jpg"}/>
+            <Header link={"/img/header/admin.jpg"}/>
             <Admin/>
         </>
         }/>
