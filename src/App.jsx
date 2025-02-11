@@ -68,20 +68,7 @@ function App() {
         </>
         } />
 
-        <Route path="login" element={
-            <>
-                <Header link={"/img/header/batch.jpg"}/>
-                <Login/> 
-            </>
-        }/>
-
-        <Route path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK" element={
-            <>
-                <Header link={"/img/header/batch.jpg"}/>
-                <Admin/>
-            </>
-        }/>
-
+        
         <Route path="/prereq/competitive/gre" element={
         <>
             <Header link={"/img/header/gre.jpg"}/>
@@ -122,141 +109,117 @@ function App() {
         </>
         }/>
         
-                <Route
-                    path="/prereq/competitive/toefl"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/toefl.jpg"}/>
-                            <ExamsToGive />
-                            <Toefl />
-                        </>
-                    }
-                />
+        <Route path="/prereq/competitive/toefl" element={
+        <>
+            <Header link={"/img/header/toefl.jpg"}/>
+            <ExamsToGive />
+            <Toefl />
+        </>
+        }/>
 
                 {/* Languages */}
-                <Route path="/prereq/languages" element={<Lang />} />
-                <Route
-                    path="/prereq/languages/german"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/german.jpg"}/>
-                            <Lang />
-                            <German />
-                        </>
-                    }
-                />
-                <Route
-                    path="/prereq/languages/french"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/french.jpg"}/>
-                            <Lang />
-                            <French />
-                        </>
-                    }
-                />
-                <Route
-                    path="/counselling/study-destination"
-                    element={
-                        <>
-                            <Header link={"/img/header/studydest.jpg"}/>
-                            <Destination/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/counselling/stream-selection"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/stream.jpg"}/>
-                            <Stream/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/education/mba"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/mba.jpg"}/>
-                            <Mba/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/education/post-graduate"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/postgrad.jpg"}/>
-                            <PostGraduate/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/education/undergraduate"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/undergrad.jpg"}/>
-                            <UnderGraduate/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/new/upcoming-batches"
-                    element={
-                        <>
-                        
-                            <Header link={"/img/header/batch.jpg"}/>
-                            <UpcomingBatches/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/new/news&update"
-                    element={
-                        <>
-                        
-                            <Header link={"/img/header/news.jpg"}/>
-                            <NewsUpdate/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/new/blogs"
-                    element={
-                        <>
-                        
-    <Header link={"/img/header/blog.jpg"}/>
-                            <Blogs/>
-                        </>
-                    }
-                />
-                <Route
-                    path="/new/discount"
-                    element={
-                        <>
-                            <Header link={"/img/header/discount.jpg"}/>
-                            <Discounts/>
-                        </>
-                    }
-                />
+        <Route path="/prereq/languages" element={<Lang />} />
                 
-                <Route
-                    path="/appointment/schedule/booking"
-                    element={
-                        <>
-                        
-                        <Header link={"/img/header/batch.jpg"}/>
-                            <Appointment/>
-                        </>
-                    }
-                />
+        <Route path="/prereq/languages/german" element={
+        <>
+            <Header link={"/img/header/german.jpg"}/>
+            <Lang />
+            <German />
+        </>
+        }/>
+
+        <Route path="/prereq/languages/french" element={
+        <>
+            <Header link={"/img/header/french.jpg"}/>
+            <Lang />
+            <French />
+        </>
+        }/>
+
+        <Route path="/counselling/study-destination" element={
+        <>
+            <Header link={"/img/header/studydest.jpg"}/>
+            <Destination/>
+        </>
+        }/>
+
+        <Route path="/counselling/stream-selection" element={
+        <>
+            <Header link={"/img/header/stream.jpg"}/>
+            <Stream/>
+        </>
+        }/>
+                
+        <Route path="/education/mba" element={
+        <>
+            <Header link={"/img/header/mba.jpg"}/>
+            <Mba/>
+        </>
+        }/>
+                
+        <Route path="/education/post-graduate" element={
+        <>
+            <Header link={"/img/header/postgrad.jpg"}/>
+            <PostGraduate/>
+        </>
+        }/>
+                
+        <Route path="/education/undergraduate" element={
+        <>
+            <Header link={"/img/header/undergrad.jpg"}/>
+            <UnderGraduate/>
+        </>
+        }/>
+                
+        <Route path="/new/upcoming-batches" element={
+        <>
+            <Header link={"/img/header/batch.jpg"}/>
+            <UpcomingBatches/>
+        </>
+        }/>
+
+        <Route path="/new/news&update" element={
+        <>
+            <Header link={"/img/header/news.jpg"}/>
+            <NewsUpdate/>
+        </>
+        }/>
+                
+        <Route path="/new/blogs" element={
+        <>
+            <Header link={"/img/header/blog.jpg"}/>
+            <Blogs/>
+        </>
+        }/>
+
+        <Route path="/new/discount" element={
+        <>
+            <Header link={"/img/header/discount.jpg"}/>
+            <Discounts/>
+        </>
+        } />
+                
+        <Route path="/appointment/schedule/booking" element={
+        <>
+            <Header link={"/img/header/batch.jpg"}/>
+            <Appointment/>
+        </>
+        }/>
+
+        <Route path="login" element={
+        <>
+            <Header link={"/img/header/batch.jpg"}/>
+            <Login/> 
+        </>
+        }/>
+
+        <Route path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK" element={
+        <>
+            <Header link={"/img/header/batch.jpg"}/>
+            <Admin/>
+        </>
+        }/>
+
     </Routes>
     <a  id="whatsapp" className='whatsapp' href='https://api.whatsapp.com/send/?phone=919930454686&text&type=phone_number&app_absent=0' target='_blank'><i className="fa fa-whatsapp" aria-hidden="true"></i></a>
     <Contact/>

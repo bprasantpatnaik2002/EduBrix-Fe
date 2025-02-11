@@ -154,14 +154,21 @@ function Navbar() {
                   </NavLink>
                 </li>
                 
-                
-                
-                <li>
-                  <NavLink to="/about" className="page-scroll">
-                    About us
+                <li className="dropdown">
+                  <NavLink  className="page-scroll">
+                    More <span> <i className="fa fa-angle-down" aria-hidden="true"></i></span>
                   </NavLink>
+                  <ul className="dropdown-menu">
+                    <li>
+                    <NavLink to="/about" className="page-scroll">About us</NavLink>
+                    </li>
+                    <li>
+                    <NavLink to="/login" className="page-scroll">Admin login <span><i class="fa fa-sign-in" aria-hidden="true"></i></span></NavLink>
+                    </li>
+                  </ul>
                 </li>
               </ul>
+              
             </div>
           </div>
         </nav>
