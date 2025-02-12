@@ -32,7 +32,7 @@ function Header({ link }) {
                   Learn More
                 </NavLink>{" "}
                 <NavLink
-                  to="/appointment/schedule/booking"
+                  to="/appointment-schedule&type=booking"
                   className=""
                 >
                   <p>Book Your Appointment <i className="fa fa-arrow-right" aria-hidden="true"></i></p>

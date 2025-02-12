@@ -199,7 +199,7 @@ function App() {
         </>
         } />
                 
-        <Route path="/appointment/schedule/booking" element={
+        <Route path="/appointment-schedule&type=booking" element={
         <>
             <Header link={"/img/header/batch.jpg"}/>
             <Appointment/>

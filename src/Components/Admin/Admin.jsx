@@ -30,7 +30,7 @@ function Admin() {
             <div className="input-container">
             <input
                 type="text"
-                placeholder="Enter new Fall link"
+                placeholder="Enter new Fall Google drive File link"
                 value={newFallLink}
                 onChange={(e) => setNewFallLink(e.target.value)}
             />
@@ -60,7 +60,7 @@ function Admin() {
             <div className="input-container">
             <input
                 type="text"
-                placeholder="Enter new Parent link"
+                placeholder="Enter new Parent Google drive File link"
                 value={newParentLink}
                 onChange={(e) => setNewParentLink(e.target.value)}
             />
@@ -312,13 +312,13 @@ function Admin() {
             <div className="input-container">
             <input
                 type="text"
-                placeholder="Review Name"
+                placeholder="Reviewer Name"
                 value={newReview.name}
                 onChange={(e) => setNewReview({ ...newReview, name: e.target.value })}
             />
             <input
                 type="text"
-                placeholder="Review Text"
+                placeholder="Reviewer Text"
                 value={newReview.text}
                 onChange={(e) => setNewReview({ ...newReview, text: e.target.value })}
             />
