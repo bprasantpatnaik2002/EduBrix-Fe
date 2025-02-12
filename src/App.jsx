@@ -17,12 +17,12 @@ import Pte from './Components/Prerequisites/CompetitiveExams/Pte';
 import Ielts from './Components/Prerequisites/CompetitiveExams/Ielts';
 import Gmat from './Components/Prerequisites/CompetitiveExams/Gmat';
 import Gre from './Components/Prerequisites/CompetitiveExams/Gre';
-import Destination from './Components/counselling%Destination/Destination';
-import Stream from './Components/counselling%Stream/Stream';
+import Destination from './Components/counselling/Destination/Destination';
+import Stream from './Components/counselling/Stream/Stream';
 import Header from './Components/Common/Header';
-import Mba from './Components/education%Mba';
-import PostGraduate from './Components/education%PostGraduate';
-import UnderGraduate from './Components/education%UnderGraduate';
+import Mba from './Components/education/Mba';
+import PostGraduate from './Components/education/PostGraduate';
+import UnderGraduate from './Components/education/UnderGraduate';
 import UpcomingBatches from './Components/WhatsNew.jsx/UpcomingBatches';
 import NewsUpdate from './Components/WhatsNew.jsx/NewsUpdate';
 import Blogs from './Components/WhatsNew.jsx/Blogs';
@@ -69,7 +69,7 @@ function App() {
         } />
 
         
-        <Route path="/prereq%competitive%gre" element={
+        <Route path="/prereq_category~competitive&exam~gre" element={
         <>
             <Header link={"/img/header/gre.jpg"}/>
             <ExamsToGive />
@@ -77,7 +77,7 @@ function App() {
         </>
         }/>
 
-        <Route path="/prereq%competitive%gmat" element={
+        <Route path="/prereq_category~competitive&exam~gmat" element={
         <>
             <Header link={"/img/header/gmat.jpg"}/>
             <ExamsToGive />
@@ -85,7 +85,7 @@ function App() {
         </>
         }/>
 
-        <Route path="/prereq%competitive%ielts" element={
+        <Route path="/prereq_category~competitive&exam~ielts" element={
         <>
             <Header link={"/img/header/ielts.jpg"}/>
             <ExamsToGive />
@@ -93,7 +93,7 @@ function App() {
         </>
         }/>
 
-        <Route path="/prereq%competitive%pte" element={
+        <Route path="/prereq_category~competitive&exam~pte" element={
         <>
             <Header link={"/img/header/pte.jpg"}/>
             <ExamsToGive />
@@ -101,7 +101,7 @@ function App() {
         </>
         }/>
 
-        <Route path="/prereq%competitive%sat" element={
+        <Route path="/prereq_category~competitive&exam~sat" element={
         <>
             <Header link={"/img/header/sat.jpg"}/>
             <ExamsToGive />
@@ -109,7 +109,7 @@ function App() {
         </>
         }/>
         
-        <Route path="/prereq%competitive%toefl" element={
+        <Route path="/prereq_category~competitive&exam~toefl" element={
         <>
             <Header link={"/img/header/toefl.jpg"}/>
             <ExamsToGive />
@@ -118,9 +118,9 @@ function App() {
         }/>
 
                 {/* Languages */}
-        <Route path="/prereq%languages" element={<Lang />} />
+        <Route path="/prereq_category~languages" element={<Lang />} />
                 
-        <Route path="/prereq%languages%german" element={
+        <Route path="/prereq_category~languages&exam~german" element={
         <>
             <Header link={"/img/header/german.jpg"}/>
             <Lang />
@@ -128,7 +128,7 @@ function App() {
         </>
         }/>
 
-        <Route path="/prereq%languages%french" element={
+        <Route path="/prereq_category~languages&exam~french" element={
         <>
             <Header link={"/img/header/french.jpg"}/>
             <Lang />
@@ -136,63 +136,63 @@ function App() {
         </>
         }/>
 
-        <Route path="/counselling%study-destination" element={
+        <Route path="/counselling_category~study-destination" element={
         <>
             <Header link={"/img/header/studydest.jpg"}/>
             <Destination/>
         </>
         }/>
 
-        <Route path="/counselling%stream-selection" element={
+        <Route path="/counselling_category~stream-selection" element={
         <>
             <Header link={"/img/header/stream.jpg"}/>
             <Stream/>
         </>
         }/>
                 
-        <Route path="/education%mba" element={
+        <Route path="/education_category~mba" element={
         <>
             <Header link={"/img/header/mba.jpg"}/>
             <Mba/>
         </>
         }/>
                 
-        <Route path="/education%post-graduate" element={
+        <Route path="/education_category~post-graduate" element={
         <>
             <Header link={"/img/header/postgrad.jpg"}/>
             <PostGraduate/>
         </>
         }/>
                 
-        <Route path="/education%undergraduate" element={
+        <Route path="/education_category~undergraduate" element={
         <>
             <Header link={"/img/header/undergrad.jpg"}/>
             <UnderGraduate/>
         </>
         }/>
                 
-        <Route path="/new%upcoming-batches" element={
+        <Route path="/new_category~upcoming-batches" element={
         <>
             <Header link={"/img/header/batch.jpg"}/>
             <UpcomingBatches/>
         </>
         }/>
 
-        <Route path="/new%news&update" element={
+        <Route path="/new_category~news&update" element={
         <>
             <Header link={"/img/header/news.jpg"}/>
             <NewsUpdate/>
         </>
         }/>
                 
-        <Route path="/new%blogs" element={
+        <Route path="/new_category~blogs" element={
         <>
             <Header link={"/img/header/blog.jpg"}/>
             <Blogs/>
         </>
         }/>
 
-        <Route path="/new%discount" element={
+        <Route path="/new_category~discount" element={
         <>
             <Header link={"/img/header/discount.jpg"}/>
             <Discounts/>
