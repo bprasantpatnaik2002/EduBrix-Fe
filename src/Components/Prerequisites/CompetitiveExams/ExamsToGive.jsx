@@ -12,12 +12,12 @@ function ExamsToGive() {
                   <h2>Competitive Exams</h2>
                   <p>With our unwavering support and expert guidance, you’ll gain the skills, confidence, and knowledge to excel in competitive exams and achieve your highest aspirations.</p>
                   <div className="row">
-                      <NavLink to="/prereq_category~competitive&exam~gre">GRE</NavLink>
-                      <NavLink to="/prereq_category~competitive&exam~gmat">GMAT</NavLink>
-                      <NavLink to="/prereq_category~competitive&exam~sat">SAT</NavLink>
-                      <NavLink to="/prereq_category~competitive&exam~toefl">TOEFL</NavLink>
-                      <NavLink to="/prereq_category~competitive&exam~ielts">IELTS</NavLink>
-                      <NavLink to="/prereq_category~competitive&exam~pte">PTE</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-gre">GRE</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-gmat">GMAT</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-sat">SAT</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-toefl">TOEFL</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-ielts">IELTS</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-pte">PTE</NavLink>
                   </div>
                 </div>
               </div>

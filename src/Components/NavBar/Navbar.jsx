@@ -79,16 +79,16 @@ function Navbar() {
                   </NavLink>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink to="/new_category~upcoming-batches">Upcoming Batches</NavLink>
+                      <NavLink to="/new_category-upcoming-batches">Upcoming Batches</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/new_category~news&update">News & Update</NavLink>
+                      <NavLink to="/new_category-news&update">News & Update</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/new_category~blogs">Blogs</NavLink>
+                      <NavLink to="/new_category-blogs">Blogs</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/new_category~discount">Discount</NavLink>
+                      <NavLink to="/new_category-discount">Discount</NavLink>
                     </li>
                   </ul>
                 </li>
@@ -100,13 +100,13 @@ function Navbar() {
                   </NavLink>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink to="/education_category~mba">MBA</NavLink>
+                      <NavLink to="/education_category-mba">MBA</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/education_category~post-graduate">Post Graduate</NavLink>
+                      <NavLink to="/education_category-post-graduate">Post Graduate</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/education_category~undergraduate">Undergraduate</NavLink>
+                      <NavLink to="/education_category-undergraduate">Undergraduate</NavLink>
                     </li>
                   </ul>
                 </li>
@@ -118,10 +118,10 @@ function Navbar() {
                   </NavLink>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink to="/counselling_category~study-destination">Study Destination</NavLink>
+                      <NavLink to="/counselling_category-study-destination">Study Destination</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/counselling_category~stream-selection">Stream Selection</NavLink>
+                      <NavLink to="/counselling_category-stream-selection">Stream Selection</NavLink>
                     </li>
                   </ul>
                 </li>
@@ -132,10 +132,10 @@ function Navbar() {
                   </NavLink>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink to="/prereq_category~competitive&exam~gre">Competitive Exams</NavLink>
+                      <NavLink to="/prereq_category-competitive&exam-gre">Competitive Exams</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/prereq_category~languages&exam~french">Languages</NavLink>
+                      <NavLink to="/prereq_category-languages&exam-french">Languages</NavLink>
                     </li>
                   </ul>
                 </li>
