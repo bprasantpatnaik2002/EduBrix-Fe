@@ -206,14 +206,14 @@ function App() {
         </>
         }/>
 
-        <Route path="login" element={
+        <Route path="/login_dashboard_EduBrix$Overseas$Consultancy_SWAPNAJA-ABHISHEK" element={
         <>
             <Header link={"/img/header/login.jpg"}/>
             <Login/> 
         </>
         }/>
 
-        <Route path="/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK" element={
+        <Route path="/admin_dashboard_EduBrix$Overseas$Consultancy_SWAPNAJA-ABHISHEK" element={
         <>
             <Header link={"/img/header/admin.jpg"}/>
             <Admin/>
