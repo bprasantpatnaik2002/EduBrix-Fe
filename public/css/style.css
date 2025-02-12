@@ -1841,6 +1841,9 @@ label {
 }
 
 #batches .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 7vw;
   aspect-ratio: 3/2;
