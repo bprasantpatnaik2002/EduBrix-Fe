@@ -41,17 +41,17 @@ function Contact(props) {
             </div>
             <div className="contact-item">
               <h3>Education</h3>
-              <NavLink to="education_category-mba">
+              <NavLink to="education_category~mba">
                 MBA
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="education_category-post-graduate">
+              <NavLink to="education_category~post-graduate">
                 Post Graduation
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="education_category-undergraduate">
+              <NavLink to="education_category~undergraduate">
                 Undergraduation
               </NavLink>
             </div>
@@ -59,33 +59,33 @@ function Contact(props) {
         <div className="col-md-3 col-md-offset-1 ">
             <div className="contact-item">
               <h3>What's New</h3>
-              <NavLink to="new_category-upcoming-batches">
+              <NavLink to="new_category~upcoming-batches">
                 Upcoming Batches
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="new_category-news&update">
+              <NavLink to="new_category~news&update">
                 News & Updates
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="new_category-blogs">
+              <NavLink to="new_category~blogs">
                 Blogs
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="new_category-discount">
+              <NavLink to="new_category~discount">
                 Discounts
               </NavLink>
             </div>
             <div className="contact-item">
               <h3>Counselling</h3>
-              <NavLink to="counselling_category-study-destination">
+              <NavLink to="counselling_category~study-destination">
                 Study Destination
               </NavLink>
             </div>
             <div className="contact-item">
-              <NavLink to="counselling_category-stream-selection">
+              <NavLink to="counselling_category~stream-selection">
                 Stream Selection
               </NavLink>
             </div>
