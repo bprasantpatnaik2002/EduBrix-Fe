@@ -77,6 +77,30 @@ hr {
 .brick, .secondPart{
   color:#B82132
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(4, 163, 255, 0.09); /* Subtle light grey with transparency */
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb (Draggable part) */
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft pink to peach gradient */
+  border-radius: 20px;
+  border: 2px solid white; /* Gives a clean separation */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3); /* More vibrant hover effect */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
 /* Navigation */
 #menu {
   padding: 15px;
@@ -871,28 +895,54 @@ a:focus,
 /* BackDrop of Team PArt */
 .sub-part {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
   flex-wrap: wrap; 
-  color:black
-
+  color:black;
+  padding:0px;
+  background-color:rgba(255, 255, 255, 0); 
 }
 .sub-part{
   -webkit-transform: scale(0.8);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
 }
 
 .Member {
   max-width: 40%;
-  flex: 1 1 40%; /* Ensures flexibility while maintaining the max-width */
+  height: 100vh;
+  flex: 1 1 40%;
   background-color: rgb(240, 235, 235);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  margin-bottom: 20px; /* Adds space between rows on smaller screens */
+  margin-bottom: 20px;
+  overflow-y: auto;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Modern scrollbar styling */
+.Member::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Member::-webkit-scrollbar-track {
+  background: rgba(200, 200, 200, 0.2); /* Subtle light grey with transparency */
+  border-radius: 10px;
+}
+
+.Member::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft pink to peach gradient */
+  border-radius: 20px;
+  border: 2px solid white; /* Gives a clean separation */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.Member::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3); /* More vibrant hover effect */
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .name {
@@ -912,7 +962,7 @@ a:focus,
 }
 
 img {
-  width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
 }

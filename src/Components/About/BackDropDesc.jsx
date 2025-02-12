@@ -8,7 +8,7 @@ function BackDropDesc({name,image,job,desc}) {
             <img src={image} alt={`${name} image`} />
             <div className='designation'><span className='firstPart'>Director -</span><span className='secondPart'>- {job}</span></div>
                 <p>{desc}</p>
-            </div>
+        </div>
             
     </div>
       )

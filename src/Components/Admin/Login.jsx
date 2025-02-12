@@ -34,7 +34,7 @@ function Login() {
                 // Store email in localStorage (optional)
                 localStorage.setItem("email", email);
 
-                navigate("/admin/dashboard/EduBrix$Overseas$Consultancy/SWAPNAJA-ABHISHEK");
+                navigate("/admin_dashboard_EduBrix$Overseas$Consultancy_SWAPNAJA-ABHISHEK");
             }
         } catch (err) {
             setError(err.response?.data?.error || "Something went wrong!");
