@@ -17,7 +17,7 @@ import Pte from './Components/Prerequisites/CompetitiveExams/Pte';
 import Ielts from './Components/Prerequisites/CompetitiveExams/Ielts';
 import Gmat from './Components/Prerequisites/CompetitiveExams/Gmat';
 import Gre from './Components/Prerequisites/CompetitiveExams/Gre';
-import Destination from './Components/counselling/Destination/Destination.jsx';
+import Destination from '/src/Components/counselling/Destination/Destination.jsx';
 import Stream from './Components/counselling/Stream/Stream';
 import Header from './Components/Common/Header';
 import Mba from './Components/education/Mba';
