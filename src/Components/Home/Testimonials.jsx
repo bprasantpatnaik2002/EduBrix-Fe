@@ -25,16 +25,7 @@ function Testimonials() {
                         <div className="google-image">
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
-                          <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                height: "100vh",
-                                backgroundColor: "#f1f1f1",
-                              }}
-                            >
-                              <span
+                          <span
                                 style={{
                                   fontSize: "50px",
                                   background:
@@ -46,7 +37,6 @@ function Testimonials() {
                               >
                                 <FontAwesomeIcon icon={faGoogle} />
                               </span>
-                            </div>
                           </a>
                         </div>
                       </div>
