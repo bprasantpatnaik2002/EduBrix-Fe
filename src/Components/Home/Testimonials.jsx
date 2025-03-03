@@ -27,7 +27,7 @@ function Testimonials() {
                           <a href={d.link} target="_blank">
                           <span
                                 style={{
-                                  fontSize: "50px",
+                                  fontSize: "30px",
                                   background:
                                     "linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%)",
                                   WebkitBackgroundClip: "text",
