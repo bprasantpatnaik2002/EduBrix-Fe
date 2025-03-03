@@ -8,6 +8,7 @@ function Team() {
     const [name, setName] = React.useState("");
     const [job, setJob] = React.useState("");
     const [desc, setDesc] = React.useState("");
+    const [account, setAccount] = React.useState("");
   
     const handleClose = () => {
       setOpen(false);
@@ -31,7 +32,8 @@ function Team() {
         
         Strong communication, active listening, and relationship building skills to identify and meet student and parent needs. Understanding and respecting other cultures and providing culturally relevant guidance and support. Able to analyze difficult circumstances, find answers, and make student-beneficial judgments.
         
-        Following international education consultancy ethics and best practices to protect students’ interests. A focus on student needs and goals in decision-making. Staying current on overseas education legislation, visa regulations, and institution offerings to provide accurate and relevant guidance.`
+        Following international education consultancy ethics and best practices to protect students’ interests. A focus on student needs and goals in decision-making. Staying current on overseas education legislation, visa regulations, and institution offerings to provide accurate and relevant guidance.`,
+        linkedin:"https://www.linkedin.com/in/swapnaja-kulkarni-4712601a7/"
       },
       {
         "img": "img/team/02.jpg",
@@ -44,7 +46,8 @@ function Team() {
         
         Highly experienced teaching beginner, intermediate, and advanced German. Experience teaching youngsters to adults and adapting strategies. Experience in customized training for exams, corporate communication, academia, or industry needs. Trained executives at Siemens, Patni, and Actisys, to name a few. 
         
-        Ability to create and implement structured lesson plans using a range of resources, activities, and assessments to improve learning. Marathi, Hindi, and English aid communication with non-German learners.`
+        Ability to create and implement structured lesson plans using a range of resources, activities, and assessments to improve learning. Marathi, Hindi, and English aid communication with non-German learners.`,
+        linkedin:"https://www.linkedin.com/in/abhishek-kulkarni-341a74211/"
       }
     ]
   
@@ -67,6 +70,7 @@ function Team() {
                         setName(d.name);
                         setJob(d.job);
                         setDesc(d.desc);
+                        setAccount(d.linkedin);
                       }
                     }>
                       <div className="thumbnail">
@@ -76,6 +80,12 @@ function Team() {
                           <h4>{d.name}</h4>
                           <p>Director – {d.job}</p>
                           <p><span className="firstPart">Edu</span><span className="secondPart">Brix</span></p>
+                          <p>
+                            <a href={d.linkedin} className="linkedin-link">
+                              Linked
+                              <i className="fa fa-linkedin linkedin-icon" aria-hidden="true"></i>
+                            </a>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -90,7 +100,7 @@ function Team() {
                   open={open}
                   onClick={handleClose}
                   >
-                    <BackDropDesc name={name} image={img} job={job} desc={desc}/>
+                    <BackDropDesc name={name} image={img} job={job} desc={desc} account={account}/>
                   </Backdrop>
       </div>
     );

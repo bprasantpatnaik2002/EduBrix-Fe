@@ -17,8 +17,8 @@ function Lang() {
                   <h2>Languages</h2>
                   <p>With our unwavering support and expertly designed programs, you'll not only master new languages but also discover the confidence to express yourself and thrive in a world full of possibilities.</p>
                   <div className="row">
-                      <NavLink to="/prereq_category=languages&exam=french" className={isActiveForFrench ? 'active' : ''}>French</NavLink>
                       <NavLink to="/prereq_category=languages&exam=german" className={isActiveForGerman ? 'active' : ''}>German</NavLink>
+                      <NavLink to="/prereq_category=languages&exam=french" className={isActiveForFrench ? 'active' : ''}>French</NavLink>
                   </div>
                 </div>
               </div>

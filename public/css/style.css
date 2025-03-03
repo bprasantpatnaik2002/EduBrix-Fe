@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Serif Display", serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -11,7 +12,7 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 h2 {
   text-transform: uppercase;
@@ -112,14 +113,14 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Serif Display", serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: "DM Serif Display", serif;
   text-transform: uppercase;
   color: #555;
   font-size: 15px;
@@ -145,8 +146,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 #menu img {
   width: clamp(15rem, 10vw, 150px); /* Responsive width with minimum and maximum limits */
-  height: auto; /* Ensures the aspect ratio is preserved */
-  max-width: 100%; /* Prevents the image from exceeding its container's width */
+  height: auto; 
+  max-width: 100%; 
 }
 
 #menu .logo{
@@ -245,7 +246,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .section-title h2 {
   position: relative;
@@ -267,7 +268,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Serif Display", serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
@@ -379,7 +380,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.5);
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Serif Display", serif;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -476,6 +477,7 @@ a:focus,
 /* About Section */
 #about {
   padding: 100px 0;
+  background: #f6f6f6;
 }
 #about h3 {
   font-size: 22px;
@@ -519,11 +521,14 @@ a:focus,
 #about p {
   line-height: 24px;
   margin: 30px 0;
+  text-align: justify;
+  display: block;
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 10px 100px;
   background: linear-gradient(to right, #9ACBD0  0%, #48A6A7 100%);
+  height:85vh;
 }
 #services .service-desc {
   margin: 10px 10px 20px;
@@ -616,13 +621,20 @@ a:focus,
 
 /* Testimonials Section */
 #testimonials {
-  padding: 100px 0;
-  background: #f6f6f6;
+  margin: 10px 100px;
+  background: white;
+  height: 85vh;
 }
+
+
 #testimonials i {
   color: #e6e6e6;
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+#testimonials img {
+  height: 60vh;
 }
 
 .testimonial {
@@ -731,19 +743,23 @@ a:focus,
 
 
 /* University selection Section */
+.select-univ{
+  background: #f6f6f6;
+  height:85vh;
+}
 .university-selection-section {
-  font-family: "Open Sans", sans-serif;
-  padding: 40px;
+  font-family: "DM Serif Display", serif;
+  padding: 0 40px;
   border-radius: 10px;
   margin: 40px auto;
 }
 
 .university-selection-section h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DM Serif Display", serif;
   font-size: clamp(1.2rem, 2vw, 2.5rem); /* Responsive font size */
   color: #333;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "DM Serif Display", serif;
   text-align: center;
 }
 
@@ -868,6 +884,10 @@ a:focus,
 #team {
   padding: 100px 0;
 }
+#team p{
+  text-align: justify;
+  display: block;
+}
 #team h4 {
   margin: 5px 0;
 }
@@ -890,6 +910,27 @@ a:focus,
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#team .linkedin-link {
+  font-weight: bold; /* Makes the text bolder */
+  text-decoration: none; /* Removes underline */
+  color: #0A66C2; /* LinkedIn blue color */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#team .linkedin-icon {
+  background-color: #0A66C2; /* LinkedIn blue */
+  color: white; /* White text */
+  padding: 5px;
+  border-radius: 4px; /* Slightly rounded corners */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
 /* BackDrop of Team PArt */
@@ -1081,7 +1122,7 @@ img {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: 'Arial', sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 /* Hover Effect */
@@ -1126,12 +1167,12 @@ img {
 
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  padding: 0 100px ;
   background: linear-gradient(to right, #9ACBD0  0%, #48A6A7 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 #contact .section-title p {
   font-size: 16px;
@@ -1155,11 +1196,7 @@ img {
   color: #fff;
   margin-top: 80px;
   margin-bottom: 25px;
-  padding-bottom: 20px;
   font-weight: 400;
-}
-#contact form {
-  padding-top: 20px;
 }
 #contact .text-danger {
   color: #cc0033;
@@ -1177,44 +1214,10 @@ img {
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Serif Display", serif;
   float: left;
 }
-#contact .form-control {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #444;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-#contact .form-control:focus {
-  border-color: #999;
-  outline: 0;
-  -webkit-box-shadow: transparent;
-  box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-  color: #777;
-}
-.form-control:-moz-placeholder {
-  color: #777;
-}
-.form-control::-moz-placeholder {
-  color: #777;
-}
-.form-control:-ms-input-placeholder {
-  color: #777;
-}
+
 #contact .contact-item {
   margin: 20px 0;
 }
@@ -1229,6 +1232,10 @@ label {
 #contact .contact-item a {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
+}
+#contact .contact-item img:hover{
+  transform: scale(1.1); /* Increases the size by 10% */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 #contact .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -1488,7 +1495,7 @@ label {
   padding: 20px;
   border-radius: 15px;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 
@@ -1601,12 +1608,13 @@ label {
   flex: 1 1 calc(50% - 20px);
   box-sizing: border-box;
   background: linear-gradient(135deg, #9ACBD0 0%, #F2EFE7 100%);
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease;
+  width: 90vw;
 }
 
 /* Card styling */
@@ -1614,14 +1622,13 @@ label {
   background: linear-gradient(135deg, #9ACBD0 0%, #F2EFE7 100%);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  width: 100%;
+  width: 90vw;
   padding: 24px;
   display: flex;
   gap:1vw;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 90vh;
 }
 
 #stream-card .card:hover {
@@ -1629,7 +1636,6 @@ label {
 }
 /* Card title styling */
 #stream-card .card-title {
-  font-size: 1.6vw;
   font-weight: bold;
   color: #2c3e50;
   text-align: center;
@@ -1638,7 +1644,6 @@ label {
 
 /* Card content heading styling */
 #stream-card .card-content h3 {
-  font-size: 1.4vw;
   color: #2973B2;;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1654,7 +1659,6 @@ label {
 }
 
 #stream-card .card-content ul li {
-  font-size: 1vw;
   color: #780C28;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -1679,11 +1683,11 @@ label {
   }
 
   #stream-card .card-content h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   #stream-card .card-content ul li {
-    font-size: 2vw;
+    font-size: 1.3vw;
   }
 }
 
@@ -1697,11 +1701,11 @@ label {
   }
 
   #stream-card .card-content h3 {
-    font-size: 3.5vw;
+    font-size: 2vw;
   }
 
   #stream-card .card-content ul li {
-    font-size: 3vw;
+    font-size: 1.9vw;
   }
 }
 
@@ -1711,15 +1715,15 @@ label {
   }
 
   #stream-card .card-title {
-    font-size: 5vw;
-  }
-
-  #stream-card .card-content h3 {
     font-size: 4vw;
   }
 
-  #stream-card .card-content ul li {
+  #stream-card .card-content h3 {
     font-size: 3.5vw;
+  }
+
+  #stream-card .card-content ul li {
+    font-size: 3vw;
   }
 }
 
@@ -1971,7 +1975,7 @@ label {
 
 /* General Styles */
 #admin body {
-  font-family: Arial, sans-serif;
+  font-family: "DM Serif Display", serif;
   margin: 0;
   padding: 0;
   background-color: #f4f6f9;
@@ -2115,7 +2119,7 @@ label {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80%;
+  height:95vh;
   margin: auto;
   overflow: hidden;
 }
@@ -2124,7 +2128,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  height:80vh;
+  width:90vw;
   margin:1vw;
   transition: transform 0.5s ease-in-out;
 }
@@ -2172,9 +2177,9 @@ label {
 #services .responsive-video {
   width: 100%;
   max-width: 1200px; /* Increased the max width */
-  height: auto;
+  height:60vh;
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
 }
 
 /* Responsive design for large screens */

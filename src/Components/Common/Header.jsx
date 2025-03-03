@@ -21,8 +21,8 @@ function Header({ link }) {
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h1>
-                  We Don't Design Careers. We Design Lives
-                  <span></span>
+                  We Don't Design Careers. <br /> We Design Lives
+                  
                 </h1>
                 <p>World's top universities. Limitless career opportunities. Unmatched student experience. Start your journey with us.</p>
                 <NavLink

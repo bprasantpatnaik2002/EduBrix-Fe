@@ -10,10 +10,9 @@ function Contact(props) {
     <div>
       <div id="contact">
         <div className="container">
-        <div className="col-md-12">
+        <div >
           <div className='row social'>
             <div><img src="/img/Logofull.png" alt="Company Logo" /></div>
-            
             EduBrix Overseas Consultancy Private Limited (EduBrix). is a complete end-to-end solution for Global Careers. Our core activities deal with assisting and ensuring that students make the right choice when they decide to pursue education in overseas educational institutions tailoring career paths to suit individual profiles within the required parameters. Since 2008 we have sent hundreds of students to various countries like the USA, UK, Germany, Australia, Canada, New Zealand, Ireland, Poland, etc.  
           </div>
         </div>
@@ -56,6 +55,7 @@ function Contact(props) {
               </NavLink>
             </div>
           </div>
+          
         <div className="col-md-3 col-md-offset-1 ">
             <div className="contact-item">
               <h3>What's New</h3>
@@ -117,7 +117,14 @@ function Contact(props) {
                 edubrix.overseas@gmail.com
               </p>
             </div>
+            <div className="contact-item">
+              <p><span><i className="fa fa-building-o" aria-hidden="true"/>Office Hub</span></p>
+              <a target="_blank" href="https://www.google.com/maps/place/Edubrix+Overseas+Consultancy+Pvt+Ltd/@19.2429258,72.8678575,17.08z/data=!4m6!3m5!1s0x3be7b1a0938dedb1:0x8408bc7c2006c485!8m2!3d19.2429691!4d72.8677737!16s%2Fg%2F11j2jcvn25?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D">
+                  <img src="/img/map.png" alt="Image-location" />
+              </a>
+            </div>
           </div>
+
           <div className="col-md-12">
             <div className="row">
               <div className="social">

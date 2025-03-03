@@ -21,7 +21,6 @@ function Navbar() {
                 fetch(`${API_BASE_URL}/batches`, { credentials: 'include' }).then(res => res.json()),
                 fetch(`${API_BASE_URL}/reviews`, { credentials: 'include' }).then(res => res.json()),
             ]);
-
             setFall(fallRes);
             setParent(parentRes);
             setServices(servicesRes);
@@ -135,7 +134,7 @@ function Navbar() {
                       <NavLink to="/prereq_category=competitive&exam=gre">Competitive Exams</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/prereq_category=languages&exam=french">Languages</NavLink>
+                      <NavLink to="/prereq_category=languages&exam=german">Languages</NavLink>
                     </li>
                   </ul>
                 </li>
