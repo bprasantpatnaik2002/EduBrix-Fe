@@ -695,7 +695,6 @@ a:focus,
 .google-g {
   font-size: 50px;
   color: #4285F4;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -24,7 +24,7 @@ function Testimonials() {
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
                           <div class="google-g">
-                            <i class="fa fa-google" aria-hidden="true" /> 
+                            <i class="fa fa-google google-g" aria-hidden="true" /> 
                           </div>
                           </a>
                         </div>
