@@ -700,7 +700,6 @@ a:focus,
 .google-g img {
   width: 100%;
   height: auto;
-  display: block;
 }
 @media (max-width: 600px) {
   .google-g {
@@ -1178,7 +1177,7 @@ img {
 
 /* Contact Section */
 #contact {
-  padding: 0 100px ;
+  padding: 0 10px ;
   background: linear-gradient(to right, #9ACBD0  0%, #48A6A7 100%);
   color: rgba(255, 255, 255, 0.75);
 }
