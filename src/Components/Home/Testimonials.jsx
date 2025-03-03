@@ -1,5 +1,7 @@
 import React from 'react'
 import { useData } from '../ContextAPI/DataContext';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function Testimonials() {
     const { reviews } = useData();
@@ -23,10 +25,28 @@ function Testimonials() {
                         <div className="google-image">
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
-                          <span style="font-size: 50px; background: linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%); 
-                                      -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">
-                              <i class="fa fa-google" />
-                          </span>
+                          <div
+                              style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                height: "100vh",
+                                backgroundColor: "#f1f1f1",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  fontSize: "50px",
+                                  background:
+                                    "linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%)",
+                                  WebkitBackgroundClip: "text",
+                                  WebkitTextFillColor: "transparent",
+                                  display: "inline-block",
+                                }}
+                              >
+                                <FontAwesomeIcon icon={faGoogle} />
+                              </span>
+                            </div>
                           </a>
                         </div>
                       </div>
