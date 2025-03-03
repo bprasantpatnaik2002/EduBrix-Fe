@@ -23,10 +23,10 @@ function Testimonials() {
                         <div className="google-image">
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
-                          <div class="google-icon">
-                          <i class="fa fa-google" aria-hidden="true" style="font-size: 50px; background: linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
- 
-                          </div>
+                          <span style="font-size: 50px; background: linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%); 
+                                      -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;">
+                              <i class="fa fa-google" />
+                          </span>
                           </a>
                         </div>
                       </div>
