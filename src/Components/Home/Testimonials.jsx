@@ -23,11 +23,9 @@ function Testimonials() {
                         <div className="google-image">
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
-                            {/* <img 
-                              src="https://tse3.mm.bing.net/th?id=OIP.VEm0V7-K-_BWB9d7ek5gyAHaHa&pid=Api&P=0&h=180" 
-                              
-                              alt="Google image link" 
-                            /> */}
+                          <div class="google-g">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google G" /> 
+                          </div>
                           </a>
                         </div>
                       </div>

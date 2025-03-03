@@ -692,10 +692,21 @@ a:focus,
   gap:1vw
 }
 
-.google-image img{
-  width: 4vw;
+.google-g {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.google-g img {
+  width: 100%;
   height: auto;
-  border-radius:100%
+  display: block;
+}
+@media (max-width: 600px) {
+  .google-g {
+      width: 30px;
+      height: 30px;
+  }
 }
 
 .review{
@@ -2251,4 +2262,21 @@ label {
 }
 #predep .service-desc {
   margin-bottom: 40px;
+}
+
+.google-g {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.google-g img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .google-g {
+      width: 30px;
+      height: 30px;
+  }
 }
