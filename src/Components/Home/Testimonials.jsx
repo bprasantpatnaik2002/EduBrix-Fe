@@ -24,7 +24,8 @@ function Testimonials() {
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
                           <div class="google-icon">
-                            <i class="fa fa-google google-g" aria-hidden="true" /> 
+                          <i class="fa fa-google" aria-hidden="true" style="font-size: 50px; background: linear-gradient(90deg, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+ 
                           </div>
                           </a>
                         </div>
