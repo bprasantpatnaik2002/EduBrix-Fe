@@ -23,11 +23,11 @@ function Testimonials() {
                         <div className="google-image">
                         <div className="testimonial-meta"> - {d.name} </div>
                           <a href={d.link} target="_blank">
-                            {/* <img 
+                            <img 
                               src="https://tse3.mm.bing.net/th?id=OIP.VEm0V7-K-_BWB9d7ek5gyAHaHa&pid=Api&P=0&h=180" 
                               
                               alt="Google image link" 
-                            /> */}
+                            />
                           </a>
                         </div>
                       </div>

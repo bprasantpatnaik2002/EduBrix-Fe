@@ -47,7 +47,6 @@ function SelectUniv() {
                     <div>Safety</div>
                   </li>
                 </ul>
-                <p id='univ-desc'>Our database is updated with the latest programs across top global universities. Whether you are interested in science, technology, engineering, arts, or any other field, we will find the best fit for you.</p>
               </section>
               </div>
       </div>
