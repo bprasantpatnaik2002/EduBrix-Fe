@@ -17,7 +17,7 @@ function Service() {
       }
 
   return (
-        <div id="services" className="text-center">
+        <div id="predep" className="text-center">
           <div className="container">
               <div className="section-title">
               <h2>Our Services</h2>
