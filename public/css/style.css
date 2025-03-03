@@ -693,18 +693,17 @@ a:focus,
 }
 
 .google-g {
-  width: 50px;
-  height: 50px;
+  font-size: 50px;
+  color: #4285F4;
   position: relative;
-}
-.google-g img {
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
 }
 @media (max-width: 600px) {
   .google-g {
-      width: 30px;
-      height: 30px;
+      font-size: 30px;
   }
 }
 
