@@ -32,6 +32,7 @@ import Login from './Components/Admin/Login';
 import Admin from './Components/Admin/Admin';
 import { DataProvider } from "./Components/ContextAPI/DataContext";
 import Appointment from './Components/Appointment/Appointment';
+import ScrollToTop from './Components/Common/ScrollToTop';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 
   return (
    <DataProvider>
+    <ScrollToTop/>
     <Navbar/>
     <Routes>
       <Route index element={
