@@ -712,7 +712,7 @@ a:focus,
 }
 
 .review img{
-  height:1vh;
+  height:0.6vh;
   aspect-ratio:3/2;
   border-radius:1%
 }
