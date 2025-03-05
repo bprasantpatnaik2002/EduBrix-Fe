@@ -711,7 +711,7 @@ a:focus,
 }
 
 .review img {
-  height: 3rem; /* Default size for desktops */
+  width: 6rem; /* Default size for desktops */
   aspect-ratio: 3 / 2;
   border-radius: 5%; /* Slightly rounded corners */
 }
@@ -719,23 +719,24 @@ a:focus,
 /* Medium screens (Tablets, 1024px and below) */
 @media (max-width: 1024px) {
   .review img {
-    height: 2.5rem;
+    width: 5rem;
   }
 }
 
 /* Small screens (Mobile devices, 768px and below) */
 @media (max-width: 768px) {
   .review img {
-    height: 2rem;
+    width: 4rem;
   }
 }
 
 /* Extra small screens (Phones, 480px and below) */
 @media (max-width: 480px) {
   .review img {
-    height: 1.8rem;
+    width: 3rem;
   }
 }
+
 
 /* Testimonial Video */
 
