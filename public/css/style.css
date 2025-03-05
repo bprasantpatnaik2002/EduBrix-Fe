@@ -704,40 +704,46 @@ a:focus,
   }
 }
 
-.review{
-  display:flex;
+.review {
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 100%;
 }
+
 .review img {
-  width: 6rem; /* Default size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5%; /* Slightly rounded corners */
-  display: block; /* Avoid inline spacing issues */
+  width: 100%;
+  max-width: 6rem; /* Default max width */
+  height: auto; /* Ensures aspect ratio is maintained */
+  max-height: 4rem; /* Limits the height */
+  border-radius: 5%;
+  display: block;
 }
 
 /* Medium screens (Tablets, 1024px and below) */
 @media (max-width: 1024px) {
   .review img {
-    width: 5rem;
+    max-width: 5rem;
+    max-height: 3.5rem;
   }
 }
 
 /* Small screens (Mobile devices, 768px and below) */
 @media (max-width: 768px) {
   .review img {
-    width: 4rem;
+    max-width: 4rem;
+    max-height: 3rem;
   }
 }
 
 /* Extra small screens (Phones, 480px and below) */
 @media (max-width: 480px) {
   .review img {
-    width: 3rem;
+    max-width: 3rem;
+    max-height: 2.5rem;
   }
 }
-
 
 
 /* Testimonial Video */
