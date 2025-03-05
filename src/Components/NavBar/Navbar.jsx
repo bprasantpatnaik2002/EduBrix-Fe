@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router';
 import { useData } from '../ContextAPI/DataContext';
 
@@ -7,6 +7,8 @@ function Navbar() {
   const API_BASE_URL = import.meta.env.VITE_APP_BACKEND_URL;
 
   const {setFall,setParent,setServices,setBlogs,setCoupons,setNewsUpdate,setBatches,setReviews}=useData();
+
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
