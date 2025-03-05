@@ -182,7 +182,7 @@ const scrollToTop = () => {
           </div>
           {showButton && (
             <button className="back-to-top" onClick={scrollToTop}>
-              ↑ Top
+              ↑
             </button>
           )}
         </nav>
