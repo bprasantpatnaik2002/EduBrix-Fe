@@ -35,7 +35,24 @@ function Navbar() {
     };
 
     fetchData();
+
+    // Show button when user scrolls down
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
 }, []);
+
+// Scroll to top function
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
     return (
         <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -161,6 +178,11 @@ function Navbar() {
               
             </div>
           </div>
+          {showButton && (
+            <button className="back-to-top" onClick={scrollToTop}>
+              ↑ Top
+            </button>
+          )}
         </nav>
       );
 }
