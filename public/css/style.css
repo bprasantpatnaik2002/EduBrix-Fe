@@ -714,9 +714,9 @@ a:focus,
 
 .review img {
   width: 100%;
-  max-width: 6rem; /* Default max width */
+  max-width: 20rem; /* Default max width */
   height: auto; /* Ensures aspect ratio is maintained */
-  max-height: 4rem; /* Limits the height */
+  max-height: 10rem; /* Limits the height */
   border-radius: 5%;
   display: block;
 }
@@ -724,24 +724,24 @@ a:focus,
 /* Medium screens (Tablets, 1024px and below) */
 @media (max-width: 1024px) {
   .review img {
-    max-width: 5rem;
-    max-height: 3.5rem;
+    max-width: 15rem;
+    max-height: 10rem;
   }
 }
 
 /* Small screens (Mobile devices, 768px and below) */
 @media (max-width: 768px) {
   .review img {
-    max-width: 4rem;
-    max-height: 3rem;
+    max-width: 10rem;
+    max-height: 8rem;
   }
 }
 
 /* Extra small screens (Phones, 480px and below) */
 @media (max-width: 480px) {
   .review img {
-    max-width: 3rem;
-    max-height: 2.5rem;
+    max-width: 8rem;
+    max-height: 6rem;
   }
 }
 
