@@ -38,7 +38,7 @@ function Team() {
       {
         "img": "img/team/02.jpg",
         "name": "CA ABHISHEK KULKARNI",
-        "job": "Director-Training",
+        "job": "Director Training",
         "desc":`Edubrix was founded by a Chartered Accountant by training and a German Trainer by passion. With over 6 years of corporate experience, he has worked as a Business Analyst for M&M, The National Stock Exchange, and Asian CERC. 
         
   

@@ -711,7 +711,8 @@ a:focus,
 }
 
 .review img{
-  width: 10vw;
+  width: 15vw;
+  height:auto;
   border-radius:1%
 }
 
@@ -1019,8 +1020,8 @@ img {
 }
 
 .Member p {
-  font-size: 1.6rem; /* Default size for desktops */
-  line-height: 1.6; /* Better readability */
+  font-size: 2rem; /* Default size for desktops */
+  line-height: 1.8; /* Better readability */
   color: #333; /* Adjust color if needed */
 }
 
@@ -1031,7 +1032,7 @@ img {
     flex: 1 1 48%; /* Adjusts flex basis to fit more items per row */
   }
   .Member p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1042,7 +1043,7 @@ img {
   }
 
   .Member p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .name {
@@ -1064,9 +1065,9 @@ img {
     padding: 15px; /* Smaller padding for compact layout */
   }
   .Member p {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
-  
+
   .name {
     font-size: 1.8rem; /* Further reduce font size for very small screens */
   }
