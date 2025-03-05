@@ -1171,10 +1171,33 @@ img {
 
 /* Contact Section */
 #contact {
-  padding: 0 10px ;
-  background: linear-gradient(to right, #9ACBD0  0%, #48A6A7 100%);
-  color: rgba(255, 255, 255, 0.75);
+  padding: 0 10px;
+  background: linear-gradient(to right, #9ACBD0 0%, #48A6A7 100%);
+  color: rgba(255, 255, 255, 0.9); /* Slightly brighter text */
+  font-size: 1.8rem; /* Default size for desktops */
 }
+
+/* Medium screens (Tablets, 1024px and below) */
+@media (max-width: 1024px) {
+  #contact {
+    font-size: 1.6rem; /* Slightly smaller */
+  }
+}
+
+/* Small screens (Mobile devices, 768px and below) */
+@media (max-width: 768px) {
+  #contact {
+    font-size: 1.4rem;
+  }
+}
+
+/* Extra small screens (Phones, 480px and below) */
+@media (max-width: 480px) {
+  #contact {
+    font-size: 1.2rem;
+  }
+}
+
 #contact h3 {
   color: #fff;
   margin-top: 80px;
@@ -1190,30 +1213,7 @@ label {
 
 #contact .contact-item {
   margin: 20px 0;
-  font-size: 1.2rem; /* Default size */
 }
-
-/* Medium screens (Tablets, 768px and above) */
-@media (max-width: 1024px) {
-  #contact .contact-item {
-    font-size: 1rem; /* Slightly smaller */
-  }
-}
-
-/* Small screens (Mobile devices, 600px and below) */
-@media (max-width: 600px) {
-  #contact .contact-item {
-    font-size: 0.9rem; /* Even smaller */
-  }
-}
-
-/* Extra small screens (Phones, 400px and below) */
-@media (max-width: 400px) {
-  #contact .contact-item {
-    font-size: 0.8rem; /* Smallest size */
-  }
-}
-
 #contact .contact-item span {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
