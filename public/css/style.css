@@ -906,6 +906,12 @@ a:focus,
   padding: 10px 0 0;
   color: #888;
 }
+#team .members{
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
 #team .member{
   margin:1vw;
   width:auto;
@@ -1012,11 +1018,20 @@ img {
   border-radius: 10px;
 }
 
+.Member p {
+  font-size: 1.6rem; /* Default size for desktops */
+  line-height: 1.6; /* Better readability */
+  color: #333; /* Adjust color if needed */
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .Member {
     max-width: 48%; /* Slightly wider on medium-sized screens */
     flex: 1 1 48%; /* Adjusts flex basis to fit more items per row */
+  }
+  .Member p {
+    font-size: 1.4rem;
   }
 }
 
@@ -1024,6 +1039,10 @@ img {
   .Member {
     max-width: 100%; /* Full-width for smaller screens */
     flex: 1 1 100%; /* Ensures items take full width */
+  }
+
+  .Member p {
+    font-size: 1.2rem;
   }
 
   .name {
@@ -1044,7 +1063,10 @@ img {
   .Member {
     padding: 15px; /* Smaller padding for compact layout */
   }
-
+  .Member p {
+    font-size: 1rem;
+  }
+  
   .name {
     font-size: 1.8rem; /* Further reduce font size for very small screens */
   }
