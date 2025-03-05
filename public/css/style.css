@@ -711,8 +711,7 @@ a:focus,
 }
 
 .review img{
-  width: 20vw;
-  height: 1vh;
+  width: 10vw;
   border-radius:1%
 }
 
@@ -2280,21 +2279,30 @@ label {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #007bff;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2); /* Glass effect */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px); /* Frosted glass */
+  -webkit-backdrop-filter: blur(10px);
   color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .back-to-top:hover {
-  background-color: #0056b3;
+  background: rgba(255, 255, 255, 0.3); /* Slightly lighter */
+  transform: scale(1.1);
 }
 
 .back-to-top:active {
-  background-color: #004085;
+  transform: scale(0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
