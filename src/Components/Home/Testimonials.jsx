@@ -46,7 +46,7 @@ function Testimonials() {
             </div>
           </div>
            <div className="review">
-              <img src="https://tse2.mm.bing.net/th?id=OIP.wUXo3aTrQYT5Z4ezTHMQZwHaEs&pid=Api&P=0&h=180" alt="google rating" />
+              <img src="https://d1yt6rol3hd1gx.cloudfront.net/media/images/4.9_stars_-_Google_Reviews_wp5iuS0.max-855x1000.png" alt="google rating" />
             </div>
         </div>
       );
