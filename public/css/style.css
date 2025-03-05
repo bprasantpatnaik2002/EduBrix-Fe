@@ -707,7 +707,8 @@ a:focus,
 .review{
   display:flex;
   justify-content: center;
-  margin:1vw;
+  align-items: center;
+  max-width: 100%;
 }
 .review img {
   width: 6rem; /* Default size */
