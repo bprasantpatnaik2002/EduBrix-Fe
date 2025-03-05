@@ -709,11 +709,11 @@ a:focus,
   justify-content: center;
   margin:1vw;
 }
-
 .review img {
-  width: 6rem; /* Default size for desktops */
-  aspect-ratio: 3/2;
+  width: 6rem; /* Default size */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 5%; /* Slightly rounded corners */
+  display: block; /* Avoid inline spacing issues */
 }
 
 /* Medium screens (Tablets, 1024px and below) */
@@ -736,6 +736,7 @@ a:focus,
     width: 3rem;
   }
 }
+
 
 
 /* Testimonial Video */
