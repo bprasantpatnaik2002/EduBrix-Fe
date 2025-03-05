@@ -712,7 +712,7 @@ a:focus,
 
 .review img {
   width: 6rem; /* Default size for desktops */
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3/2;
   border-radius: 5%; /* Slightly rounded corners */
 }
 
