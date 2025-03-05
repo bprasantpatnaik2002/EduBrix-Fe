@@ -707,16 +707,35 @@ a:focus,
 .review{
   display:flex;
   justify-content: center;
-  gap:1vw;
-  margin:0.5vw;
+  margin:1vw;
 }
 
-.review img{
-  height:0.5vh;
-  aspect-ratio:3/2;
-  border-radius:1%
+.review img {
+  height: 5rem; /* Default size for desktops */
+  aspect-ratio: 3 / 2;
+  border-radius: 5%; /* Slightly rounded corners */
 }
 
+/* Medium screens (Tablets, 1024px and below) */
+@media (max-width: 1024px) {
+  .review img {
+    height: 4rem;
+  }
+}
+
+/* Small screens (Mobile devices, 768px and below) */
+@media (max-width: 768px) {
+  .review img {
+    height: 3.5rem;
+  }
+}
+
+/* Extra small screens (Phones, 480px and below) */
+@media (max-width: 480px) {
+  .review img {
+    height: 3rem;
+  }
+}
 
 /* Testimonial Video */
 
