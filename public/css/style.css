@@ -708,11 +708,11 @@ a:focus,
   display:flex;
   justify-content: center;
   gap:1vw;
-  margin-top:1vw;
+  margin:0.5vw;
 }
 
 .review img{
-  height:0.6vh;
+  height:0.5vh;
   aspect-ratio:3/2;
   border-radius:1%
 }
