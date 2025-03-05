@@ -182,7 +182,7 @@ const scrollToTop = () => {
           </div>
           {showButton && (
             <button className="back-to-top" onClick={scrollToTop}>
-              ↑
+              <i class="fa fa-arrow-up" aria-hidden="true"/>
             </button>
           )}
         </nav>

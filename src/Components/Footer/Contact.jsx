@@ -11,11 +11,12 @@ function Contact(props) {
         <div className="container">
         <div >
           <div className='row social'>
-            <div><img src="/img/Logofull.png" alt="Company Logo" /></div>
+            
             EduBrix Overseas Consultancy Private Limited (EduBrix). is a complete end-to-end solution for Global Careers. Our core activities deal with assisting and ensuring that students make the right choice when they decide to pursue education in overseas educational institutions tailoring career paths to suit individual profiles within the required parameters. Since 2008 we have sent hundreds of students to various countries like the USA, UK, Germany, Australia, Canada, New Zealand, Ireland, Poland, etc.  
           </div>
         </div>
-        <div className="col-md-3 col-md-offset-1 ">
+        <div className="col-md-4 col-md-offset-1 "><img src="/img/Logofull.png" alt="Company Logo" /></div>
+        <div className="col-md-4 col-md-offset-1 ">
             <div className="contact-item">
               <h3>Links</h3>
               <NavLink to="/">
@@ -55,7 +56,7 @@ function Contact(props) {
             </div>
           </div>
           
-        <div className="col-md-3 col-md-offset-1 ">
+        <div className="col-md-4 col-md-offset-1 ">
             <div className="contact-item">
               <h3>What's New</h3>
               <NavLink to="new_category=upcoming-batches">
@@ -90,7 +91,7 @@ function Contact(props) {
             </div>
           </div>
           
-          <div className="col-md-3 col-md-offset-1 contact-info">
+          <div className="col-md-4 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Get In Touch</h3>
               <p>
