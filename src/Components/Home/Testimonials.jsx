@@ -44,11 +44,10 @@ function Testimonials() {
                     
                   ))}
             </div>
-            {/* <div className="review">
-              <img src="https://tse2.mm.bing.net/th?id=OIP.wUXo3aTrQYT5Z4ezTHMQZwHaEs&pid=Api&P=0&h=180" alt="google rating" />
-            </div> */}
           </div>
-           
+           <div className="review">
+              <img src="https://tse2.mm.bing.net/th?id=OIP.wUXo3aTrQYT5Z4ezTHMQZwHaEs&pid=Api&P=0&h=180" alt="google rating" />
+            </div>
         </div>
       );
 }
