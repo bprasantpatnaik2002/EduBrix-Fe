@@ -7,7 +7,7 @@ function Blogs() {
     
 
     return (
-        <div id='batches' className="text-center">
+        <div id='coupons' className="text-center">
             <div className="container">
                 <div className="section-title">
                     <h2>Blogs</h2>

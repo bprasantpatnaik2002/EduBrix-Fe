@@ -4,9 +4,36 @@ import { useData } from '../ContextAPI/DataContext';
 
 function Discounts() {
     const { coupons } = useData();
+    // const coupons = [
+    //     {
+    //         coupon: "NEWUSER50",
+    //         date: "March 15, 2025",
+    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+NEWUSER50",
+    //         link: "abc123" // Google Drive File ID
+    //     },
+    //     {
+    //         coupon: "SPRINGSALE20",
+    //         date: "April 5, 2025",
+    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+SPRINGSALE20",
+    //         link: "def456"
+    //     },
+    //     {
+    //         coupon: "SUMMERDEAL30",
+    //         date: "May 20, 2025",
+    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+SUMMERDEAL30",
+    //         link: "ghi789"
+    //     },
+    //     {
+    //         coupon: "FESTIVE40",
+    //         date: "December 25, 2025",
+    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+FESTIVE40",
+    //         link: "jkl012"
+    //     }
+    // ];
+    
 
     return (
-        <div id='batches' className="text-center">
+        <div id='coupons' className="text-center">
             <div className="container">
                 <div className="section-title">
                     <h2>Coupons</h2>
