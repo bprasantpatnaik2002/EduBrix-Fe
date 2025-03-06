@@ -24,7 +24,7 @@ function Admin() {
         date: "",
         time: "",
         duration: "",
-        img: "",
+        meet: "",
         link: ""
     });
 
@@ -178,9 +178,9 @@ function Admin() {
                 />
                 <input
                     type="text"
-                    placeholder="Batch Image URL"
-                    value={newBatch.img}
-                    onChange={(e) => setNewBatch({ ...newBatch, img: e.target.value })}
+                    placeholder="Batch Google Meet Link"
+                    value={newBatch.meet}
+                    onChange={(e) => setNewBatch({ ...newBatch, meet: e.target.value })}
                 />
                 <input
                     type="text"
