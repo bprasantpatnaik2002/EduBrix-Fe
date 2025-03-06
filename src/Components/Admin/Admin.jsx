@@ -18,7 +18,15 @@ function Admin() {
 
     const [newNewsUpdate, setNewNewsUpdate] = useState({ news: "", date: "", img: "", link: "" });
 
-    const [newBatch, setNewBatch] = useState({ course: "", date: "", img: "", link: "" });
+    const [newBatch, setNewBatch] = useState({
+        course: "",
+        desc: "",
+        date: "",
+        time: "",
+        duration: "",
+        img: "",
+        link: ""
+    });
 
     const [newReview, setNewReview] = useState({ name: "", text: "",  link: "" });
 
@@ -136,47 +144,82 @@ function Admin() {
             </div>
 
             <div className="card">
-            <h1>Manage Blogs</h1>
+            <h1>Manage Batches</h1>
             <div className="input-container">
-            <input
-                type="text"
-                placeholder="Blog Name"
-                value={newBlog.blog}
-                onChange={(e) => setNewBlog({ ...newBlog, blog: e.target.value })}
-            />
-            <input
-                type="text"
-                placeholder="Blog Date"
-                value={newBlog.date}
-                onChange={(e) => setNewBlog({ ...newBlog, date: e.target.value })}
-            />
-            <input
-                type="text"
-                placeholder="Blog Image"
-                value={newBlog.img}
-                onChange={(e) => setNewBlog({ ...newBlog, img: e.target.value })}
-            />
-            <input
-                type="text"
-                placeholder="Blog Google docs file id"
-                value={newBlog.link}
-                onChange={(e) => setNewBlog({ ...newBlog, link: e.target.value })}
-            />
+                <input
+                    type="text"
+                    placeholder="Course Name"
+                    value={newBatch.course}
+                    onChange={(e) => setNewBatch({ ...newBatch, course: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Description"
+                    value={newBatch.desc}
+                    onChange={(e) => setNewBatch({ ...newBatch, desc: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Start Date (e.g., March 10, 2025)"
+                    value={newBatch.date}
+                    onChange={(e) => setNewBatch({ ...newBatch, date: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Time (e.g., 6:00 PM IST)"
+                    value={newBatch.time}
+                    onChange={(e) => setNewBatch({ ...newBatch, time: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Duration (e.g., 3 Months)"
+                    value={newBatch.duration}
+                    onChange={(e) => setNewBatch({ ...newBatch, duration: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Batch Image URL"
+                    value={newBatch.img}
+                    onChange={(e) => setNewBatch({ ...newBatch, img: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Batch Google Docs File ID"
+                    value={newBatch.link}
+                    onChange={(e) => setNewBatch({ ...newBatch, link: e.target.value })}
+                />
             </div>
-            <div >
-            <button onClick={() => { addBlog(newBlog); setNewBlog({ blog: "", date: "", img: "", link: "" }); }}>Add Blog</button>
-            <ul>
-                {Array.isArray(blogs) ? (
-                blogs.map((blog, index) => (
-                    <li key={blog._id}>
-                        {blog.blog} - {blog.date}
-                        <button onClick={() => removeBlog(blog._id)}>Remove</button>
-                    </li>
-                ))):(<p>No blogs available</p>)}
-            </ul>
+            <div>
+                <button
+                    onClick={() => {
+                        addBatch(newBatch);
+                        setNewBatch({
+                            course: "",
+                            desc: "",
+                            date: "",
+                            time: "",
+                            duration: "",
+                            img: "",
+                            link: ""
+                        });
+                    }}
+                >
+                    Add Batch
+                </button>
+                <ul>
+                    {Array.isArray(batches) && batches.length > 0 ? (
+                        batches.map((batch) => (
+                            <li key={batch._id}>
+                                <strong>{batch.course}</strong> - {batch.date} ({batch.duration})
+                                <button onClick={() => removeBatch(batch._id)}>Remove</button>
+                            </li>
+                        ))
+                    ) : (
+                        <p>No batches available</p>
+                    )}
+                </ul>
             </div>
-            
-            </div>
+        </div>
 
             <div className="card">
             <h1>Manage Coupons</h1>

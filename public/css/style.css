@@ -1861,108 +1861,226 @@ label {
 }
 
 /* Upcoming Batches */
-
-#batches .batches {
-  display: flex;
+/* Ensure #batches remains visible on tablet screens */
+#batches{
+  margin: 5vh 0;
+}
+/* Ensure the slider stays in place */
+#batches .batch-carousel {
+  display: flex !important;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  flex-wrap: wrap;
+  width: 100%;
+  overflow: visible !important; /* Prevent clipping */
+  position: relative;
+  padding-bottom: 20px;
+}
+/* Batch Card Styling */
+#batches .batch-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  height: 225px;
+  display: flex !important; /* Ensure visibility */
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  min-width: 250px;
 }
 
-#batches .batch {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  margin: 1vw;
-  padding: 1vw;
-  border-radius: 10px;
+@media (max-width: 1024px) {
+
+  #batches .batch-carousel {
+    display: flex !important;
+    overflow: visible !important;
+  }
+
+  #batches .batch-card {
+    display: flex !important;
+  }
+}
+
+/* Adjust the spacing between slides in the carousel */
+#batches .slick-slide {
+  margin: 0 10px; /* Space between slides */
+  display: flex; /* Ensure items are aligned */
+  justify-content: center;
+}
+
+#batches .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+#batches .batch-card:hover {
+  transform: scale(1.05);
+}
+
+/* Batch Info Styling */
+#batches .batch-info {
+  padding: 14px; /* More padding */
+  text-align: left;
+  flex-grow: 1;
+}
+
+#batches .batch-info h3 {
+  font-size: 1.5rem; /* Increased font size */
+  color: #222;
+  margin-bottom: 8px;
+}
+
+#batches .batch-info p {
+  font-size: 1.2rem; /* Increased font size */
+  color: #555;
+  margin-bottom: 6px;
+}
+
+#batches .buttons{
   display:flex;
-  flex-direction:column;
   justify-content:center;
   align-items:center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap:1vw;
 }
 
-#batches .batch:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
+/* Meet Button */
+#batches .meet-link {
+  text-align: center;
+  margin-top: 10px;
 }
 
-#batches .batch-info{
-  text-align: left;
-}
-
-#batches .img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 7vw;
-  aspect-ratio: 3/2;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#batches img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-#batches .img-container:hover img {
-  transform: scale(1.05);
-}
-
-/* Overlay Effect */
-#batches .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#batches .overlay i {
-  font-size: 1.5vw; 
+#batches .meet-link a {
+  display: inline-block;
+  text-decoration: none;
+  background: #28a745; /* Green color */
   color: white;
+  padding: 10px 18px; /* Larger padding */
+  border-radius: 8px;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
 }
 
-/* Show overlay on hover */
-#batches .img-container:hover .overlay {
-  opacity: 1;
+#batches .meet-link a:hover {
+  background: #218838;
 }
 
-@media (max-width: 1440px){
-  #batches .img-container {
-    height: 15vw;
+/* Read More Button */
+#batches .read-more {
+  text-align: center;
+  margin-top: 12px;
+}
+
+#batches .read-more a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px; /* Larger padding */
+  border-radius: 10px;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+#batches .read-more a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  #batches .batch-info h3 {
+    font-size: 1.4rem; /* Adjusted for tablets */
   }
-  #batches .overlay i {
-    font-size: 1.5vw;
+
+  #batches .batch-info p {
+    font-size: 1.1rem;
+  }
+
+  #batches .meet-link a,
+  #batches .read-more a {
+    font-size: 1.1rem;
+    padding: 9px 16px;
   }
 }
 
-@media (max-width: 768px){
-  #batches .img-container {
-    height: 20vw;
+@media (max-width: 768px) {
+  #batches .batch-info h3 {
+    font-size: 1.3rem;
   }
-  #batches .overlay i {
-    font-size: 4vw;
+
+  #batches .batch-info p {
+    font-size: 1rem;
+  }
+
+  #batches .meet-link a,
+  #batches .read-more a {
+    font-size: 1rem;
+    padding: 8px 14px;
   }
 }
 
-@media (max-width: 480px){
-  #batches .img-container {
-    height: 30vw;
+@media (max-width: 480px) {
+  #batches .batch-info h3 {
+    font-size: 1.2rem; /* Adjusted for mobile */
   }
-  #batches .overlay i {
-    font-size: 5vw;
+
+  #batches .batch-info p {
+    font-size: 1rem;
+  }
+
+  #batches .meet-link a,
+  #batches .read-more a {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+
+
+#batches .custom-arrow {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 2.5rem; /* Bigger arrows */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100; /* Ensures arrows are on top */
+}
+
+#batches .custom-arrow:hover {
+  transform: translateY(-50%) scale(1.3); /* Slight zoom effect */
+}
+
+/* Adjust Arrow Positioning */
+#batches .slick-prev {
+  left: -40px; /* Ensure it's visible */
+}
+
+#batches .slick-next {
+  right: -40px; /* Ensure it's visible */
+}
+
+/* Adjust for Smaller Screens */
+@media (max-width: 1024px) {
+  #batches .slick-prev {
+    left: -20px; /* Closer for tablets */
+  }
+
+  #batches .slick-next {
+    right: -20px; /* Closer for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #batches .slick-prev, 
+  #batches .slick-next {
+    display: none !important; /* Hide arrows on small screens */
   }
 }
 

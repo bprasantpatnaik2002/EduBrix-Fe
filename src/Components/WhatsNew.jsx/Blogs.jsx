@@ -4,6 +4,7 @@ import { useData } from '../ContextAPI/DataContext';
 
 function Blogs() {
     const { blogs } = useData();
+    
 
     return (
         <div id='batches' className="text-center">
