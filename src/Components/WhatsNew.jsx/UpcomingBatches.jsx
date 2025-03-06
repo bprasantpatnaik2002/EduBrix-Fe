@@ -119,9 +119,9 @@ function UpcomingBatches() {
                             <div className="batch-info">
                                 <h3>{batch.course}</h3>
                                 <p>{batch.desc}</p>
-                                <p><strong>Date:</strong> {batch.date}</p>
-                                <p><strong>Time:</strong> {batch.time}</p>
-                                <p><strong>Duration:</strong> {batch.duration}</p>
+                                <p><strong><i className="fa fa-calendar" aria-hidden="true"/>Date:</strong> {batch.date}</p>
+                                <p><strong><i className="fa fa-clock-o" aria-hidden="true" />Time:</strong> {batch.time}</p>
+                                <p><strong><i className="fa fa-hourglass" aria-hidden="true" />Duration:</strong> {batch.duration}</p>
 
                                 {/* Conditionally rendering Meet button */}
                                 <div className='buttons'>
