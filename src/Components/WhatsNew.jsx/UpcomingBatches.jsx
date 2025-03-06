@@ -63,8 +63,8 @@ function UpcomingBatches() {
     //     }
     // ];
 
-    const batches=useData();
-    
+    const { batches }=useData();
+
     const settings = {
         dots: true,
         infinite: true,
