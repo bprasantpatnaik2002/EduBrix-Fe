@@ -2084,10 +2084,15 @@ label {
   }
 }
 
-#batches .coupon-bg{
-  background: linear-gradient(135deg, #ffffff, #d3d3d3);
-
+#batches .coupon-bg {
+  background: linear-gradient(135deg, 
+    #ff8c00 0%,    /* Orange at the top */
+    #d3d3d3 20%,   /* Light gray */
+    #ffffff 100%   /* White at the bottom */
+  );
 }
+
+
 
 #batches .copy-code button {
   background: #fff; /* Silver */

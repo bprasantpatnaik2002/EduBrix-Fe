@@ -68,6 +68,7 @@ function Coupons() {
                                     </button>
                                 </div>
                             </div>
+                            
                         </div>
                     ))}
                 </Slider>
