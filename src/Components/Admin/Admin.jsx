@@ -350,16 +350,23 @@ function Admin() {
                     onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, publishedAt: e.target.value })}
                 />
             </div>
-                <div ><button onClick={() => { addNewsUpdate(newNewsUpdate); setNewNewsUpdate({ news: "", date: "", img: "", link: "" }); }}>Add News & Update</button>
-                    <ul>
-                        {Array.isArray(newsUpdate) ? (
-                            newsUpdate.map((news, index) => (
-                                <li key={news._id}>
-                                    {news.news} - {news.date}
-                                    <button onClick={() => removeNewsUpdate(news._id)}>Remove</button>
-                                </li>
-                            ))) : (<p>No news updates available</p>)}
-                    </ul>
+                <div ><button onClick={() => { addNewsUpdate(newNewsUpdate); setNewNewsUpdate({title: "",shortDescription: "",author: "",link: "", publishedAt: ""}); }}>Add News & Update</button>
+                <ul>
+                {Array.isArray(newsUpdate) && newsUpdate.length > 0 ? (
+                    newsUpdate.map((news) => (
+                        <li key={news._id}>
+                            <strong>{news.title}</strong> - {news.publishedAt} <br />
+                            {news.shortDescription}
+                            <br />
+                            <strong>By:</strong> {news.author}
+                            
+                            <button onClick={() => removeNewsUpdate(news._id)}>Remove</button>
+                        </li>
+                    ))
+                ) : (
+                    <p>No news updates available</p>
+                )}
+            </ul>
                 </div>
 
             </div>
