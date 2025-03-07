@@ -258,9 +258,14 @@ function Admin() {
                         type="date"
                         placeholder="Valid Until"
                         value={newCoupon.validUntil ? new Date(newCoupon.validUntil).toISOString().split("T")[0] : ""}
-                        onChange={(e) => setNewCoupon({ ...newCoupon, validUntil: e.target.value })}
+                        onChange={(e) =>
+                            setNewCoupon({
+                                ...newCoupon,
+                                validUntil: e.target.value ? new Date(e.target.value).toISOString().split("T")[0] : "",
+                            })
+                        }
                     />
-                    
+ 
                     <label>
                         Active <input
                             type="checkbox"
