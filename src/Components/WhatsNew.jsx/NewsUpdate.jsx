@@ -20,8 +20,8 @@ const NextArrow = ({ onClick }) => (
 );
 
 function NewsUpdate() {
-    const { newsUpdates } = useData();
-
+    const { newsUpdate } = useData();
+    console.log(newsUpdate);
     // const newsUpdates=[
     //     {
     //         "_id": "1",
@@ -98,8 +98,8 @@ function NewsUpdate() {
                 </div>
 
                 <Slider {...settings} className="batch-carousel">
-                    {Array.isArray(newsUpdates) && newsUpdates.length > 0 ? (
-                        newsUpdates.map((news) => (
+                    {Array.isArray(newsUpdate) && newsUpdate.length > 0 ? (
+                        newsUpdate.map((news) => (
                             <div key={news._id} className="batch-card">
                                 <div className="batch-info">
                                     <h3>{news.title}</h3>
