@@ -257,14 +257,16 @@ function Admin() {
                     <input
                         type="date"
                         placeholder="Valid Until"
-                        value={newCoupon.validUntil ? new Date(newCoupon.validUntil).toISOString().split("T")[0] : ""}
-                        onChange={(e) =>
+                        value={newCoupon.validUntil}
+                        onChange={(e) => {
+                            const selectedDate = e.target.value.split("T")[0]; // Ensures only YYYY-MM-DD
                             setNewCoupon({
                                 ...newCoupon,
-                                validUntil: e.target.value ? new Date(e.target.value).toISOString().split("T")[0] : "",
-                            })
-                        }
+                                validUntil: selectedDate,
+                            });
+                        }}
                     />
+
  
                     <label>
                         Active <input
