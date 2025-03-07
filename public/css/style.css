@@ -2090,7 +2090,25 @@ label {
     #d3d3d3 20%,   /* Light gray */
     #ffffff 100%   /* White at the bottom */
   );
+  position: relative;
+  overflow: hidden;
 }
+
+/* Add Ribbon Image Without Removing Background */
+#batches .coupon-bg::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  right: 0;
+  width: 100%;  /* Adjust size */
+  height: 100%; /* Adjust size */
+  background: url('/img/ribbon.png') no-repeat;
+  background-size: contain;
+  opacity: 0.8; /* Adjust opacity */
+  pointer-events: none;
+
+}
+
 
 
 
@@ -2104,6 +2122,7 @@ label {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 10; /* Ensure it's on top */
 }
 
 #batches .copy-code button:hover {
