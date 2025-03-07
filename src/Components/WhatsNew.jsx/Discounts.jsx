@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useData } from '../ContextAPI/DataContext';
 
 // Dummy Coupon Data
 const dummyCoupons = [
@@ -26,19 +27,44 @@ const NextArrow = ({ onClick }) => (
 );
 
 function Coupons() {
-    const coupons = dummyCoupons; // Replace with API data if needed
+    const { coupons }=useData();
 
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3, // Show 3 slides by default
         slidesToScroll: 1,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [
-            { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-            { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1, arrows: false } }
+            {
+                breakpoint: 1200, 
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true, // Ensure arrows are visible
+                }
+            },
+            {
+                breakpoint: 1024, 
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true, // Fix disappearing arrows
+                    infinite: true, // Ensure slides don't break
+                    dots: true, 
+                }
+            },
+            {
+                breakpoint: 768, 
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false, // Hide arrows for better mobile UX
+                    dots: true,
+                }
+            }
         ]
     };
 
