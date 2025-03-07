@@ -255,8 +255,8 @@ function Admin() {
                     />
 
                     <input
-                        type="date"
-                        placeholder="Valid Until"
+                        type="datetext"
+                        placeholder="Valid Until (YYYY-MM-DD)"
                         value={newCoupon.validUntil}
                         onChange={(e) => {
                             const selectedDate = e.target.value.split("T")[0]; // Ensures only YYYY-MM-DD
