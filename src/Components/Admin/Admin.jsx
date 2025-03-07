@@ -261,13 +261,13 @@ function Admin() {
                         onChange={(e) => setNewCoupon({ ...newCoupon, validUntil: e.target.value })}
                     />
 
-                    <input
+                    
+                    <label>
+                        Active <input
                             type="checkbox"
                             checked={newCoupon.isActive}
                             onChange={() => setNewCoupon({ ...newCoupon, isActive: !newCoupon.isActive })}
                         />
-                    <label>
-                        Active
                     </label>
                 </div>
 
