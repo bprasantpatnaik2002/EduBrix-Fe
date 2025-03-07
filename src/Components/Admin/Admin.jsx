@@ -257,10 +257,9 @@ function Admin() {
                     <input
                         type="date"
                         placeholder="Valid Until"
-                        value={newCoupon.validUntil ? newCoupon.validUntil.split("T")[0] : ""}
+                        value={newCoupon.validUntil ? new Date(newCoupon.validUntil).toISOString().split("T")[0] : ""}
                         onChange={(e) => setNewCoupon({ ...newCoupon, validUntil: e.target.value })}
                     />
-
                     
                     <label>
                         Active <input
