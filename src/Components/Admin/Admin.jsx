@@ -22,7 +22,13 @@ function Admin() {
         isActive: true, // Default active
     });
 
-    const [newNewsUpdate, setNewNewsUpdate] = useState({ news: "", date: "", img: "", link: "" });
+    const [newNewsUpdate, setNewNewsUpdate] = useState({
+        title: "",
+        shortDescription: "",
+        author: "",
+        link: "",
+        publishedAt: ""
+    });
 
     const [newBatch, setNewBatch] = useState({
         course: "",
@@ -311,33 +317,39 @@ function Admin() {
                 </ul>
             </div>
             <div className="card">
-                <h1>Manage News & Updates</h1>
-                <div className="input-container">
-                    <input
-                        type="text"
-                        placeholder="News Name"
-                        value={newNewsUpdate.news}
-                        onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, news: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="News Date"
-                        value={newNewsUpdate.date}
-                        onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, date: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="News Image"
-                        value={newNewsUpdate.img}
-                        onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, img: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="News Google docs file id"
-                        value={newNewsUpdate.link}
-                        onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, link: e.target.value })}
-                    />
-                </div>
+            <h1>Manage News & Updates</h1>
+
+            <div className="input-container">
+                <input
+                    type="text"
+                    placeholder="Title"
+                    value={newNewsUpdate.title}
+                    onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, title: e.target.value })}
+                />
+                <textarea
+                    placeholder="Short Description"
+                    value={newNewsUpdate.shortDescription}
+                    onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, shortDescription: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Author Name"
+                    value={newNewsUpdate.author}
+                    onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, author: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="External Link (Optional)"
+                    value={newNewsUpdate.link}
+                    onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, link: e.target.value })}
+                />
+                <input
+                    type="date"
+                    placeholder="Published Date"
+                    value={newNewsUpdate.publishedAt}
+                    onChange={(e) => setNewNewsUpdate({ ...newNewsUpdate, publishedAt: e.target.value })}
+                />
+            </div>
                 <div ><button onClick={() => { addNewsUpdate(newNewsUpdate); setNewNewsUpdate({ news: "", date: "", img: "", link: "" }); }}>Add News & Update</button>
                     <ul>
                         {Array.isArray(newsUpdate) ? (
