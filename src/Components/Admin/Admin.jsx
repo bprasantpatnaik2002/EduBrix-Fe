@@ -255,7 +255,7 @@ function Admin() {
                     />
 
                     <input
-                        type="datetext"
+                        type="date"
                         placeholder="Valid Until (YYYY-MM-DD)"
                         value={newCoupon.validUntil}
                         onChange={(e) => {
