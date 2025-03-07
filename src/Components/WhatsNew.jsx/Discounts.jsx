@@ -82,11 +82,11 @@ function Coupons() {
                             <div className="batch-info">
                                 <h3>Coupon Code: <span className="coupon-code">{coupon.code}</span></h3>
                                 <p>
-                                    <strong>Discount:</strong> {coupon.discountType === "percentage" 
+                                    <i className="fa fa-percent" aria-hidden="true"/> <strong>Discount:</strong> {coupon.discountType === "percentage" 
                                         ? `${coupon.discountValue}% OFF` 
                                         : `₹${coupon.discountValue} OFF`}
                                 </p>
-                                <p><strong>Valid Until:</strong> {coupon.validUntil}</p>
+                                <p><i className="fa fa-calendar" aria-hidden="true"/> <strong>Valid Until:</strong> {coupon.validUntil}</p>
 
                                 <div className="copy-code">
                                     <button onClick={() => navigator.clipboard.writeText(coupon.code)}>
