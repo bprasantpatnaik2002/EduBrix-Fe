@@ -12,7 +12,13 @@ function Admin() {
     const [newService, setNewService] = useState({ icon: "", name: "", text: "", link: "" });
     const [editIndex, setEditIndex] = useState(null);
 
-    const [newBlog, setNewBlog] = useState({ blog: "", date: "", img: "", link: "" });
+    const [newBlog, setNewBlog] = useState({
+        title: "",
+        description: "",
+        author: "",
+        publishedAt: "",
+        link: ""
+    });
 
     const [newCoupon, setNewCoupon] = useState({
         code: "",
@@ -372,48 +378,66 @@ function Admin() {
             </div>
 
             <div className="card">
-                <h1>Manage Batches</h1>
-                <div className="input-container">
-                    <input
-                        type="text"
-                        placeholder="Batch Course"
-                        value={newBatch.course}
-                        onChange={(e) => setNewBatch({ ...newBatch, course: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Batch Date"
-                        value={newBatch.date}
-                        onChange={(e) => setNewBatch({ ...newBatch, date: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Batch Image"
-                        value={newBatch.img}
-                        onChange={(e) => setNewBatch({ ...newBatch, img: e.target.value })}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Batch Google docs file id"
-                        value={newBatch.link}
-                        onChange={(e) => setNewBatch({ ...newBatch, link: e.target.value })}
-                    />
-                </div>
-                <div >
-                    <button onClick={() => { addBatch(newBatch); setNewBatch({ course: "", date: "", img: "", link: "" }); }}>Add Batch</button>
-                    <ul>
-                        {Array.isArray(batches) ? (
-                            batches.map((batch, index) => (
-                                <li key={batch._id}>
-                                    {batch.course} - {batch.date}
-                                    <button onClick={() => removeBatch(batch._id)}>Remove</button>
-                                </li>
-                            ))) : (<p>No batches available</p>)}
-                    </ul>
-                </div>
-
-
+            <h1>Manage Blogs</h1>
+            <div className="input-container">
+                <input
+                    type="text"
+                    placeholder="Blog Title"
+                    value={newBlog.title}
+                    onChange={(e) => setNewBlog({ ...newBlog, title: e.target.value })}
+                />
+                <textarea
+                    placeholder="Blog Description"
+                    value={newBlog.description}
+                    onChange={(e) => setNewBlog({ ...newBlog, description: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="Author Name"
+                    value={newBlog.author}
+                    onChange={(e) => setNewBlog({ ...newBlog, author: e.target.value })}
+                />
+                <input
+                    type="date"
+                    value={newBlog.publishedAt}
+                    onChange={(e) => setNewBlog({ ...newBlog, publishedAt: e.target.value })}
+                />
+                <input
+                    type="text"
+                    placeholder="External Link (Optional)"
+                    value={newBlog.link}
+                    onChange={(e) => setNewBlog({ ...newBlog, link: e.target.value })}
+                />
             </div>
+
+            <button
+                onClick={() => {
+                    addBlog(newBlog);
+                    setNewBlog({
+                        title: "",
+                        description: "",
+                        author: "",
+                        publishedAt: "",
+                        link: ""
+                    });
+                }}
+            >
+                Add Blog
+            </button>
+
+            <ul>
+                {Array.isArray(blogs) && blogs.length > 0 ? (
+                    blogs.map((blog) => (
+                        <li key={blog._id}>
+                            <strong>{blog.title}</strong> - {blog.author} ({new Date(blog.publishedAt).toLocaleDateString()})
+                            <button onClick={() => removeBlog(blog._id)}>Remove</button>
+                        </li>
+                    ))
+                ) : (
+                    <p>No blogs available</p>
+                )}
+            </ul>
+        </div>
 
             <div className="card">
                 <h1>Manage Reviews</h1>
