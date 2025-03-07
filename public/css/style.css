@@ -1877,7 +1877,7 @@ label {
 }
 /* Batch Card Styling */
 #batches .batch-card {
-  background: #fff;
+  background: linear-gradient(135deg, #ffffff, #d3d3d3);
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   width: 300px;
@@ -2083,6 +2083,29 @@ label {
     display: none !important; /* Hide arrows on small screens */
   }
 }
+
+#batches .coupon-bg{
+  background: linear-gradient(135deg, #ffffff, #d3d3d3);
+
+}
+
+#batches .copy-code button {
+  background: #fff; /* Silver */
+  color: #333333; /* Charcoal */
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#batches .copy-code button:hover {
+  background: #A9A9A9; /* Darker Silver */
+  transform: scale(1.05);
+}
+
 
 #coupons {
   text-align: center;

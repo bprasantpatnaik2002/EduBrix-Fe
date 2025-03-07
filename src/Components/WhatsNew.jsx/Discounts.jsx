@@ -1,70 +1,79 @@
-import React from 'react'
-import { NavLink } from 'react-router';
-import { useData } from '../ContextAPI/DataContext';
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-function Discounts() {
-    const { coupons } = useData();
-    // const coupons = [
-    //     {
-    //         coupon: "NEWUSER50",
-    //         date: "March 15, 2025",
-    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+NEWUSER50",
-    //         link: "abc123" // Google Drive File ID
-    //     },
-    //     {
-    //         coupon: "SPRINGSALE20",
-    //         date: "April 5, 2025",
-    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+SPRINGSALE20",
-    //         link: "def456"
-    //     },
-    //     {
-    //         coupon: "SUMMERDEAL30",
-    //         date: "May 20, 2025",
-    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+SUMMERDEAL30",
-    //         link: "ghi789"
-    //     },
-    //     {
-    //         coupon: "FESTIVE40",
-    //         date: "December 25, 2025",
-    //         img: "https://via.placeholder.com/300x200.png?text=Coupon+FESTIVE40",
-    //         link: "jkl012"
-    //     }
-    // ];
-    
+// Dummy Coupon Data
+const dummyCoupons = [
+    { _id: "1", code: "SUMMER20", discountType: "percentage", discountValue: 20, validUntil: "2025-06-30", isActive: true },
+    { _id: "2", code: "WELCOME100", discountType: "fixed", discountValue: 100, validUntil: "2025-07-15", isActive: true },
+    { _id: "3", code: "FESTIVE50", discountType: "percentage", discountValue: 50, validUntil: "2025-12-31", isActive: true },
+    { _id: "4", code: "NEWUSER10", discountType: "percentage", discountValue: 10, validUntil: "2025-08-10", isActive: true },
+];
+
+// Custom Arrow Components
+const PrevArrow = ({ onClick }) => (
+    <button className="slick-prev custom-arrow" onClick={onClick}>
+        <FaChevronLeft />
+    </button>
+);
+
+const NextArrow = ({ onClick }) => (
+    <button className="slick-next custom-arrow" onClick={onClick}>
+        <FaChevronRight />
+    </button>
+);
+
+function Coupons() {
+    const coupons = dummyCoupons; // Replace with API data if needed
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
+        responsive: [
+            { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+            { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1, arrows: false } }
+        ]
+    };
 
     return (
-        <div id='coupons' className="text-center">
+        <div id='batches' className="text-center">
             <div className="container">
                 <div className="section-title">
-                    <h2>Coupons</h2>
-                    <p>Unlock Exclusive Savings with Our Special Coupons!</p>
+                    <h2>Exclusive Coupons</h2>
+                    <p>Unlock savings with our special discount codes!</p>
                 </div>
-            </div>
-            <div className='batches'>
-                {Array.isArray(coupons) &&
-                   coupons.map((coupon) => (
-                        <div className='batch' key={coupon.coupon}>
-                            <NavLink to={`https://drive.google.com/file/d/${coupon.link}/view`} target="_blank">
-                                <div className="img-container">
-                                    <img src={coupon.img} alt={coupon.coupon} />
-                                    <div className="overlay">
-                                        <i className="fa fa-eye" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </NavLink>
+
+                <Slider {...settings} className='batch-carousel'>
+                    {coupons.map((coupon) => (
+                        <div key={coupon._id} className='batch-card coupon-bg'>
                             <div className="batch-info">
-                                <h3>{coupon.coupon}</h3>
-                                <a href={`https://drive.google.com/file/d/${coupon.link}/view`} target="_blank" rel="noopener noreferrer">
-                                    Read More
-                                </a>
-                                <h4>{coupon.date}</h4>
+                                <h3>Coupon Code: <span className="coupon-code">{coupon.code}</span></h3>
+                                <p>
+                                    <strong>Discount:</strong> {coupon.discountType === "percentage" 
+                                        ? `${coupon.discountValue}% OFF` 
+                                        : `₹${coupon.discountValue} OFF`}
+                                </p>
+                                <p><strong>Valid Until:</strong> {coupon.validUntil}</p>
+
+                                <div className="copy-code">
+                                    <button onClick={() => navigator.clipboard.writeText(coupon.code)}>
+                                        Copy Code
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    ))
-                }
+                    ))}
+                </Slider>
             </div>
         </div>
     );
 }
 
-export default Discounts
+export default Coupons;

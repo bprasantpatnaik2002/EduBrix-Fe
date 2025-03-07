@@ -20,49 +20,7 @@ const NextArrow = ({ onClick }) => (
 );
 
 function UpcomingBatches() {
-    // const batches = [
-    //     {
-    //         _id: "1",
-    //         course: "Full Stack Web Development",
-    //         desc: "Learn MERN stack from scratch.",
-    //         date: "March 10, 2025",
-    //         time: "6:00 PM IST",
-    //         duration: "3 Months",
-    //         link: "xyz123",
-    //         meet: "https://meet.google.com/fwd123"  // Added Meet link
-    //     },
-    //     {
-    //         _id: "2",
-    //         course: "Data Science Bootcamp",
-    //         desc: "Master Machine Learning and AI.",
-    //         date: "April 5, 2025",
-    //         time: "7:30 PM IST",
-    //         duration: "4 Months",
-    //         link: "abc456",
-    //         meet: ""  // No meet link for this batch
-    //     },
-    //     {
-    //         _id: "3",
-    //         course: "UI/UX Design Fundamentals",
-    //         desc: "Become a UI/UX expert with hands-on projects.",
-    //         date: "May 1, 2025",
-    //         time: "5:00 PM IST",
-    //         duration: "2 Months",
-    //         link: "def789",
-    //         meet: "https://meet.google.com/uiux456"
-    //     },
-    //     {
-    //         _id: "4",
-    //         course: "Cybersecurity Essentials",
-    //         desc: "Learn the fundamentals of cybersecurity.",
-    //         date: "June 10, 2025",
-    //         time: "4:00 PM IST",
-    //         duration: "3 Months",
-    //         link: "ghi101",
-    //         meet: ""
-    //     }
-    // ];
-
+    
     const { batches }=useData();
 
     const settings = {
