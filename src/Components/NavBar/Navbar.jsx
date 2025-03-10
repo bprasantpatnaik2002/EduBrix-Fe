@@ -102,9 +102,9 @@ const scrollToTop = () => {
                     <li>
                       <NavLink to="/new_category=news&update">News & Update</NavLink>
                     </li>
-                    {/* <li>
+                    <li>
                       <NavLink to="/new_category=blogs">Blogs</NavLink>
-                    </li> */}
+                    </li>
                     <li>
                       <NavLink to="/new_category=discount">Discount</NavLink>
                     </li>

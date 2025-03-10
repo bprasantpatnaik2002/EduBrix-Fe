@@ -20,49 +20,49 @@ const NextArrow = ({ onClick }) => (
 );
 
 function Blogs() {
-    // const { blogs } = useData();
-    const blogs=[
-        {
-            "_id": "1a2b3c4d5e6f7g8h9i0j",
-            "title": "The Future of Web Development: Trends to Watch",
-            "description": "Explore the latest trends in web development, including AI-powered coding, low-code platforms, and the rise of Web3 technologies.",
-            "author": "John Doe",
-            "publishedAt": "2024-03-01T12:00:00Z",
-            "link": "https://example.com/blogs/web-development-trends"
-        },
-        {
-            "_id": "2b3c4d5e6f7g8h9i0j1a",
-            "title": "Mastering JavaScript: Tips and Tricks",
-            "description": "Improve your JavaScript skills with these advanced tips, covering performance optimization, async programming, and best practices.",
-            "author": "Jane Smith",
-            "publishedAt": "2024-02-25T15:30:00Z",
-            "link": "https://example.com/blogs/mastering-javascript"
-        },
-        {
-            "_id": "3c4d5e6f7g8h9i0j1a2b",
-            "title": "Understanding React Server Components",
-            "description": "A deep dive into React Server Components and how they can improve performance and scalability in modern web applications.",
-            "author": "Alex Johnson",
-            "publishedAt": "2024-02-15T10:45:00Z",
-            "link": "https://example.com/blogs/react-server-components"
-        },
-        {
-            "_id": "4d5e6f7g8h9i0j1a2b3c",
-            "title": "The Role of UX/UI in Modern Web Applications",
-            "description": "Learn how effective UX/UI design can enhance user engagement and satisfaction in web applications.",
-            "author": "Emily White",
-            "publishedAt": "2024-02-05T18:20:00Z",
-            "link": "https://example.com/blogs/ux-ui-design"
-        },
-        {
-            "_id": "5e6f7g8h9i0j1a2b3c4d",
-            "title": "Deploying Full-Stack Applications: Best Practices",
-            "description": "A guide to deploying full-stack web applications using modern tools like Docker, Kubernetes, and CI/CD pipelines.",
-            "author": "Michael Brown",
-            "publishedAt": "2024-01-30T09:00:00Z",
-            "link": "https://example.com/blogs/fullstack-deployment"
-        }
-    ]
+    const { blogs } = useData();
+    // const blogs=[
+    //     {
+    //         "_id": "1a2b3c4d5e6f7g8h9i0j",
+    //         "title": "The Future of Web Development: Trends to Watch",
+    //         "description": "Explore the latest trends in web development, including AI-powered coding, low-code platforms, and the rise of Web3 technologies.",
+    //         "author": "John Doe",
+    //         "publishedAt": "2024-03-01T12:00:00Z",
+    //         "link": "https://example.com/blogs/web-development-trends"
+    //     },
+    //     {
+    //         "_id": "2b3c4d5e6f7g8h9i0j1a",
+    //         "title": "Mastering JavaScript: Tips and Tricks",
+    //         "description": "Improve your JavaScript skills with these advanced tips, covering performance optimization, async programming, and best practices.",
+    //         "author": "Jane Smith",
+    //         "publishedAt": "2024-02-25T15:30:00Z",
+    //         "link": "https://example.com/blogs/mastering-javascript"
+    //     },
+    //     {
+    //         "_id": "3c4d5e6f7g8h9i0j1a2b",
+    //         "title": "Understanding React Server Components",
+    //         "description": "A deep dive into React Server Components and how they can improve performance and scalability in modern web applications.",
+    //         "author": "Alex Johnson",
+    //         "publishedAt": "2024-02-15T10:45:00Z",
+    //         "link": "https://example.com/blogs/react-server-components"
+    //     },
+    //     {
+    //         "_id": "4d5e6f7g8h9i0j1a2b3c",
+    //         "title": "The Role of UX/UI in Modern Web Applications",
+    //         "description": "Learn how effective UX/UI design can enhance user engagement and satisfaction in web applications.",
+    //         "author": "Emily White",
+    //         "publishedAt": "2024-02-05T18:20:00Z",
+    //         "link": "https://example.com/blogs/ux-ui-design"
+    //     },
+    //     {
+    //         "_id": "5e6f7g8h9i0j1a2b3c4d",
+    //         "title": "Deploying Full-Stack Applications: Best Practices",
+    //         "description": "A guide to deploying full-stack web applications using modern tools like Docker, Kubernetes, and CI/CD pipelines.",
+    //         "author": "Michael Brown",
+    //         "publishedAt": "2024-01-30T09:00:00Z",
+    //         "link": "https://example.com/blogs/fullstack-deployment"
+    //     }
+    // ]
     
 
     const settings = {
@@ -105,12 +105,12 @@ function Blogs() {
     };
 
     return (
+
         <div id='batches' className="text-center">
-            <div className="container">
-                <div className="section-title">
-                    <h2>Blogs</h2>
-                    <p>Insights & Ideas: Explore Our Latest Blogs.</p>
-                </div>
+        <div className="container">
+            <div className="section-title">
+                <h2>Blogs</h2>
+                <p>Insights & Ideas: Explore Our Latest Blogs.</p>
             </div>
 
             <Slider {...settings} className='batch-carousel'>
@@ -119,21 +119,24 @@ function Blogs() {
                         <div className="batch-info">
                             <h3>{blog.title}</h3>
                             <p>{blog.description}</p>
-                            <p><strong>By:</strong> {blog.author}</p>
-                            <p><strong><i className="fa fa-calendar" aria-hidden="true" /> Published:</strong> {new Date(blog.publishedAt).toDateString()}</p>
+                            <p><strong><i className="fa fa-calendar" aria-hidden="true"/> Date:</strong> {blog.publishedAt}</p>
+                            <p><strong><i className="fa fa-clock-o" aria-hidden="true" /> By:</strong> {blog.author}</p>
 
+                            {/* Conditionally rendering Meet button */}
+                            <div className='buttons'>
+                            
                             {/* Read More Button */}
-                            {blog.link && (
-                                <div className='read-more'>
-                                    <NavLink to={blog.link} target="_blank" rel="noopener noreferrer">
-                                        Read More
-                                    </NavLink>
-                                </div>
-                            )}
+                            <div className='read-more'>
+                                <a href={blog.link} target="_blank" rel="noopener noreferrer">
+                                    Read More
+                                </a>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 ))}
             </Slider>
+        </div>
         </div>
     );
 }
