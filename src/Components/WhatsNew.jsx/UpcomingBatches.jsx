@@ -64,17 +64,17 @@ function UpcomingBatches() {
     
 
     return (
-        <div id='batches' className="text-center">
+        <div id='whatsnew' className="text-center">
             <div className="container">
                 <div className="section-title">
                     <h2>Upcoming Batches</h2>
                     <p>Enroll in our upcoming batches and learn from the best in the industry.</p>
                 </div>
             
-                <Slider {...settings} className='batch-carousel'>
+                <Slider {...settings} className='whatsnew-carousal'>
                     {batches.map((batch) => (
-                        <div key={batch._id} className='batch-card'>
-                            <div className="batch-info">
+                        <div key={batch._id} className='whatsnew-card'>
+                            <div className="whatsnew-info">
                                 <h3>{batch.course}</h3>
                                 <p>{batch.desc}</p>
                                 <p><strong><i className="fa fa-calendar" aria-hidden="true"/> Date:</strong> {batch.date}</p>

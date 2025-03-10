@@ -90,18 +90,18 @@ function NewsUpdate() {
     };
 
     return (
-        <div id="batches" className="text-center">
+        <div id="whatsnew" className="text-center">
             <div className="container">
                 <div className="section-title">
                     <h2>Latest News & Updates</h2>
                     <p>Stay updated with the latest news and announcements.</p>
                 </div>
 
-                <Slider {...settings} className="batch-carousel">
+                <Slider {...settings} className="whatsnew-carousal">
                     {Array.isArray(newsUpdate) && newsUpdate.length > 0 ? (
                         newsUpdate.map((news) => (
-                            <div key={news._id} className="batch-card">
-                                <div className="batch-info">
+                            <div key={news._id} className="whatsnew-card">
+                                <div className="whatsnew-info">
                                     <h3>{news.title}</h3>
                                     <p>{news.shortDescription}</p>
                                     <p><i className="fa fa-user" aria-hidden="true"/> <strong>Author:</strong> {news.author}</p>

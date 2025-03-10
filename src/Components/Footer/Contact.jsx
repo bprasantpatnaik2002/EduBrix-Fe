@@ -90,34 +90,28 @@ function Contact(props) {
             </div>
           </div>
           
-          <div className="col-md-3 col-md-offset-1 contact-info">
+          <div className="col-md-3 col-md-offset-1">
             <div className="contact-item">
               <h3>Get In Touch</h3>
-              <p>
-                <span>
+              <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                A2202, Grandness CHS, Shiv Vallabh Road, Ashokvan, Dahisar East, Mumbai 400068.
-              </p>
+                <NavLink>A2202, Grandness CHS, Shiv Vallabh Road, Ashokvan, Dahisar East, Mumbai 400068.</NavLink>
             </div>
             <div className="contact-item">
-              <p>
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
-                +91 9930454686
-              </p>
+                <NavLink>+91 9930454686</NavLink>
             </div>
             <div className="contact-item">
-              <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                edubrix.overseas@gmail.com
-              </p>
+                <NavLink>edubrix.overseas@gmail.com</NavLink>
             </div>
             <div className="contact-item">
-              <p><span><i className="fa fa-building-o" aria-hidden="true"/>Office Hub</span></p>
+              <span><i className="fa fa-building-o" aria-hidden="true"/>Office Hub</span>
               <a target="_blank" href="https://www.google.com/maps/place/Edubrix+Overseas+Consultancy+Pvt+Ltd/@19.2429258,72.8678575,17.08z/data=!4m6!3m5!1s0x3be7b1a0938dedb1:0x8408bc7c2006c485!8m2!3d19.2429691!4d72.8677737!16s%2Fg%2F11j2jcvn25?entry=ttu&g_ep=EgoyMDI1MDIyMy4xIKXMDSoASAFQAw%3D%3D">
                   <img src="/img/map.png" alt="Image-location" />
               </a>

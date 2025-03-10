@@ -106,17 +106,17 @@ function Blogs() {
 
     return (
 
-        <div id='batches' className="text-center">
+        <div id='whatsnew' className="text-center">
         <div className="container">
             <div className="section-title">
                 <h2>Blogs</h2>
                 <p>Insights & Ideas: Explore Our Latest Blogs.</p>
             </div>
 
-            <Slider {...settings} className='batch-carousel'>
+            <Slider {...settings} className='whatsnew-carousal'>
                 {blogs.map((blog) => (
-                    <div key={blog._id} className='batch-card'>
-                        <div className="batch-info">
+                    <div key={blog._id} className='whatsnew-card'>
+                        <div className="whatsnew-info">
                             <h3>{blog.title}</h3>
                             <p>{blog.description}</p>
                             <p><strong><i className="fa fa-calendar" aria-hidden="true"/> Date:</strong> {blog.publishedAt}</p>

@@ -1279,6 +1279,13 @@ label {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
 }
+#contact .contact-item img{
+  width: auto;
+  height: 20vh;
+  aspect-ratio: 5/3;
+  border-radius: 10px;
+  margin-bottom: 2vw;
+}
 #contact .contact-item img:hover{
   transform: scale(1.1); /* Increases the size by 10% */
   transition: transform 0.3s ease-in-out; /* Smooth animation */
@@ -1308,8 +1315,8 @@ label {
   background: #fff;
 }
 
-#contact img{
-  width: 20vw;
+#contact img {
+  width: 25vw;
   height: auto;
   border-radius: 10px;
   margin-bottom: 2vw;
@@ -1861,12 +1868,12 @@ label {
 }
 
 /* Upcoming Batches */
-/* Ensure #batches remains visible on tablet screens */
-#batches{
+/* Ensure #whatsnew remains visible on tablet screens */
+#whatsnew{
   margin: 5vh 0;
 }
 /* Ensure the slider stays in place */
-#batches .batch-carousel {
+#whatsnew .whatsnew-carousal {
   display: flex !important;
   flex-wrap: nowrap;
   justify-content: center;
@@ -1876,7 +1883,7 @@ label {
   padding-bottom: 20px;
 }
 /* Batch Card Styling */
-#batches .batch-card {
+#whatsnew .whatsnew-card {
   background: #fff
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
@@ -1892,52 +1899,52 @@ label {
 
 @media (max-width: 1024px) {
 
-  #batches .batch-carousel {
+  #whatsnew .whatsnew-carousal {
     display: flex !important;
     overflow: visible !important;
   }
 
-  #batches .batch-card {
+  #whatsnew .whatsnew-card {
     display: flex !important;
   }
 }
 
 /* Adjust the spacing between slides in the carousel */
-#batches .slick-slide {
+#whatsnew .slick-slide {
   margin: 0 10px; /* Space between slides */
   display: flex; /* Ensure items are aligned */
   justify-content: center;
 }
 
-#batches .slick-track {
+#whatsnew .slick-track {
   display: flex !important;
   align-items: center;
 }
 
-#batches .batch-card:hover {
+#whatsnew .whatsnew-card:hover {
   transform: scale(1.05);
 }
 
 /* Batch Info Styling */
-#batches .batch-info {
+#whatsnew .whatsnew-info {
   padding: 14px; /* More padding */
   text-align: left;
   flex-grow: 1;
 }
 
-#batches .batch-info h3 {
+#whatsnew .whatsnew-info h3 {
   font-size: 1.5rem; /* Increased font size */
   color: #222;
   margin-bottom: 8px;
 }
 
-#batches .batch-info p {
+#whatsnew .whatsnew-info p {
   font-size: 1.2rem; /* Increased font size */
   color: #555;
   margin-bottom: 6px;
 }
 
-#batches .buttons{
+#whatsnew .buttons{
   display:flex;
   justify-content:center;
   align-items:center;
@@ -1945,12 +1952,12 @@ label {
 }
 
 /* Meet Button */
-#batches .meet-link {
+#whatsnew .meet-link {
   text-align: center;
   margin-top: 10px;
 }
 
-#batches .meet-link a {
+#whatsnew .meet-link a {
   display: inline-block;
   text-decoration: none;
   background: #28a745; /* Green color */
@@ -1962,17 +1969,17 @@ label {
   transition: background 0.3s ease-in-out;
 }
 
-#batches .meet-link a:hover {
+#whatsnew .meet-link a:hover {
   background: #218838;
 }
 
 /* Read More Button */
-#batches .read-more {
+#whatsnew .read-more {
   text-align: center;
   margin-top: 12px;
 }
 
-#batches .read-more a {
+#whatsnew .read-more a {
   display: inline-block;
   text-decoration: none;
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
@@ -1984,55 +1991,55 @@ label {
   transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
 }
 
-#batches .read-more a:hover {
+#whatsnew .read-more a:hover {
   transform: scale(1.1);
   background: linear-gradient(135deg, #ff4b2b, #ff416c);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-  #batches .batch-info h3 {
+  #whatsnew .whatsnew-info h3 {
     font-size: 1.4rem; /* Adjusted for tablets */
   }
 
-  #batches .batch-info p {
+  #whatsnew .whatsnew-info p {
     font-size: 1.1rem;
   }
 
-  #batches .meet-link a,
-  #batches .read-more a {
+  #whatsnew .meet-link a,
+  #whatsnew .read-more a {
     font-size: 1.1rem;
     padding: 9px 16px;
   }
 }
 
 @media (max-width: 768px) {
-  #batches .batch-info h3 {
+  #whatsnew .whatsnew-info h3 {
     font-size: 1.3rem;
   }
 
-  #batches .batch-info p {
+  #whatsnew .whatsnew-info p {
     font-size: 1rem;
   }
 
-  #batches .meet-link a,
-  #batches .read-more a {
+  #whatsnew .meet-link a,
+  #whatsnew .read-more a {
     font-size: 1rem;
     padding: 8px 14px;
   }
 }
 
 @media (max-width: 480px) {
-  #batches .batch-info h3 {
+  #whatsnew .whatsnew-info h3 {
     font-size: 1.2rem; /* Adjusted for mobile */
   }
 
-  #batches .batch-info p {
+  #whatsnew .whatsnew-info p {
     font-size: 1rem;
   }
 
-  #batches .meet-link a,
-  #batches .read-more a {
+  #whatsnew .meet-link a,
+  #whatsnew .read-more a {
     font-size: 1rem;
     padding: 8px 12px;
   }
@@ -2040,7 +2047,7 @@ label {
 
 
 
-#batches .custom-arrow {
+#whatsnew .custom-arrow {
   background: none;
   color: black;
   border: none;
@@ -2053,38 +2060,38 @@ label {
   z-index: 100; /* Ensures arrows are on top */
 }
 
-#batches .custom-arrow:hover {
+#whatsnew .custom-arrow:hover {
   transform: translateY(-50%) scale(1.3); /* Slight zoom effect */
 }
 
 /* Adjust Arrow Positioning */
-#batches .slick-prev {
+#whatsnew .slick-prev {
   left: -40px; /* Ensure it's visible */
 }
 
-#batches .slick-next {
+#whatsnew .slick-next {
   right: -40px; /* Ensure it's visible */
 }
 
 /* Adjust for Smaller Screens */
 @media (max-width: 1024px) {
-  #batches .slick-prev {
+  #whatsnew .slick-prev {
     left: -20px; /* Closer for tablets */
   }
 
-  #batches .slick-next {
+  #whatsnew .slick-next {
     right: -20px; /* Closer for tablets */
   }
 }
 
 @media (max-width: 768px) {
-  #batches .slick-prev, 
-  #batches .slick-next {
+  #whatsnew .slick-prev, 
+  #whatsnew .slick-next {
     display: none !important; /* Hide arrows on small screens */
   }
 }
 
-#batches .coupon-bg {
+#whatsnew .coupon-bg {
   background: linear-gradient(135deg, 
     #ff8c00 0%,    /* Orange at the top */
     #d3d3d3 20%,   /* Light gray */
@@ -2095,7 +2102,7 @@ label {
 }
 
 /* Add Ribbon Image Without Removing Background */
-#batches .coupon-bg::before {
+#whatsnew .coupon-bg::before {
   content: "";
   position: absolute;
   bottom: -45%;
@@ -2112,7 +2119,7 @@ label {
 
 
 
-#batches .copy-code button {
+#whatsnew .copy-code button {
   background: #fff; /* Silver */
   color: #333333; /* Charcoal */
   border: none;
@@ -2125,127 +2132,10 @@ label {
   z-index: 10; /* Ensure it's on top */
 }
 
-#batches .copy-code button:hover {
+#whatsnew .copy-code button:hover {
   background: #A9A9A9; /* Darker Silver */
   transform: scale(1.05);
 }
-
-
-#coupons {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-}
-
-#coupons .container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-#coupons .section-title h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-#coupons .section-title p {
-  color: #666;
-  font-size: 1.1rem;
-}
-
-#coupons .batches {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-#coupons .batch {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-#coupons .batch:hover {
-  transform: translateY(-5px);
-}
-
-#coupons .img-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#coupons .img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-#coupons .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#coupons .overlay i {
-  color: white;
-  font-size: 2rem;
-}
-
-#coupons .img-container:hover .overlay {
-  opacity: 1;
-}
-
-#coupons .batch-info {
-  padding: 15px;
-  text-align: center;
-}
-
-#coupons .batch-info h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-#coupons .batch-info a {
-  display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-#coupons .batch-info a:hover {
-  background: #0056b3;
-}
-
-#coupons .batch-info h4 {
-  font-size: 1rem;
-  color: #777;
-  margin-top: 10px;
-}
-
 
 /*  Login Page */
 

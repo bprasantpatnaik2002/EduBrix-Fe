@@ -69,17 +69,17 @@ function Coupons() {
     };
 
     return (
-        <div id='batches' className="text-center">
+        <div id='whatsnew' className="text-center">
             <div className="container">
                 <div className="section-title">
                     <h2>Exclusive Coupons</h2>
                     <p>Unlock savings with our special discount codes!</p>
                 </div>
 
-                <Slider {...settings} className='batch-carousel'>
+                <Slider {...settings} className='whatsnew-carousal'>
                     {coupons.map((coupon) => (
-                        <div key={coupon._id} className='batch-card coupon-bg'>
-                            <div className="batch-info">
+                        <div key={coupon._id} className='whatsnew-card coupon-bg'>
+                            <div className="whatsnew-info">
                                 <h3>Coupon Code: <span className="coupon-code">{coupon.code}</span></h3>
                                 <p>
                                     <i className="fa fa-percent" aria-hidden="true"/> <strong>Discount:</strong> {coupon.discountType === "percentage" 
